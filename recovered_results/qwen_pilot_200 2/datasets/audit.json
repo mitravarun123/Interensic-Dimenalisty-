@@ -1,0 +1,685 @@
+{
+  "categories": {
+    "facts": {
+      "count": 50,
+      "families": 8,
+      "splits": {
+        "exploratory": 38,
+        "evaluation": 12
+      },
+      "token_count_available": 50,
+      "token_length_quantiles": [
+        13.0,
+        14.25,
+        16.0,
+        17.0,
+        20.0
+      ],
+      "character_length_quantiles": [
+        62.0,
+        69.5,
+        86.0
+      ],
+      "answer_formats": {
+        "short_answer": 50
+      }
+    },
+    "arithmetic": {
+      "count": 50,
+      "families": 8,
+      "splits": {
+        "exploratory": 38,
+        "evaluation": 12
+      },
+      "token_count_available": 50,
+      "token_length_quantiles": [
+        15.0,
+        16.0,
+        17.0,
+        19.0,
+        23.0
+      ],
+      "character_length_quantiles": [
+        44.0,
+        54.0,
+        77.0
+      ],
+      "answer_formats": {
+        "short_answer": 50
+      }
+    },
+    "reasoning": {
+      "count": 50,
+      "families": 8,
+      "splits": {
+        "exploratory": 38,
+        "evaluation": 12
+      },
+      "token_count_available": 50,
+      "token_length_quantiles": [
+        21.0,
+        24.25,
+        29.0,
+        31.0,
+        38.0
+      ],
+      "character_length_quantiles": [
+        92.0,
+        127.5,
+        157.0
+      ],
+      "answer_formats": {
+        "short_answer": 50
+      }
+    },
+    "coding": {
+      "count": 50,
+      "families": 8,
+      "splits": {
+        "exploratory": 38,
+        "evaluation": 12
+      },
+      "token_count_available": 50,
+      "token_length_quantiles": [
+        17.0,
+        28.5,
+        31.0,
+        33.0,
+        40.0
+      ],
+      "character_length_quantiles": [
+        60.0,
+        79.5,
+        94.0
+      ],
+      "answer_formats": {
+        "short_answer": 50
+      }
+    }
+  },
+  "exact_normalized_duplicates": 0,
+  "near_duplicate_pairs": [
+    [
+      "facts_00005",
+      "facts_00013",
+      0.857
+    ],
+    [
+      "facts_00006",
+      "facts_00014",
+      0.867
+    ],
+    [
+      "facts_00007",
+      "facts_00015",
+      0.857
+    ],
+    [
+      "facts_00005",
+      "facts_00021",
+      0.857
+    ],
+    [
+      "facts_00013",
+      "facts_00021",
+      0.857
+    ],
+    [
+      "facts_00006",
+      "facts_00022",
+      0.867
+    ],
+    [
+      "facts_00014",
+      "facts_00022",
+      0.867
+    ],
+    [
+      "facts_00007",
+      "facts_00023",
+      0.857
+    ],
+    [
+      "facts_00015",
+      "facts_00023",
+      0.857
+    ],
+    [
+      "facts_00005",
+      "facts_00029",
+      0.857
+    ],
+    [
+      "facts_00013",
+      "facts_00029",
+      0.857
+    ],
+    [
+      "facts_00021",
+      "facts_00029",
+      0.857
+    ],
+    [
+      "facts_00006",
+      "facts_00030",
+      0.867
+    ],
+    [
+      "facts_00014",
+      "facts_00030",
+      0.867
+    ],
+    [
+      "facts_00022",
+      "facts_00030",
+      0.867
+    ],
+    [
+      "facts_00007",
+      "facts_00031",
+      0.857
+    ],
+    [
+      "facts_00015",
+      "facts_00031",
+      0.857
+    ],
+    [
+      "facts_00023",
+      "facts_00031",
+      0.857
+    ],
+    [
+      "facts_00005",
+      "facts_00037",
+      0.857
+    ],
+    [
+      "facts_00013",
+      "facts_00037",
+      0.857
+    ],
+    [
+      "facts_00021",
+      "facts_00037",
+      0.857
+    ],
+    [
+      "facts_00029",
+      "facts_00037",
+      0.857
+    ],
+    [
+      "facts_00006",
+      "facts_00038",
+      0.867
+    ],
+    [
+      "facts_00014",
+      "facts_00038",
+      0.867
+    ],
+    [
+      "facts_00022",
+      "facts_00038",
+      0.867
+    ],
+    [
+      "facts_00030",
+      "facts_00038",
+      0.867
+    ],
+    [
+      "facts_00007",
+      "facts_00039",
+      0.857
+    ],
+    [
+      "facts_00015",
+      "facts_00039",
+      0.857
+    ],
+    [
+      "facts_00023",
+      "facts_00039",
+      0.857
+    ],
+    [
+      "facts_00031",
+      "facts_00039",
+      0.857
+    ],
+    [
+      "facts_00005",
+      "facts_00045",
+      0.857
+    ],
+    [
+      "facts_00013",
+      "facts_00045",
+      0.857
+    ],
+    [
+      "facts_00021",
+      "facts_00045",
+      0.857
+    ],
+    [
+      "facts_00029",
+      "facts_00045",
+      0.857
+    ],
+    [
+      "facts_00037",
+      "facts_00045",
+      0.857
+    ],
+    [
+      "facts_00006",
+      "facts_00046",
+      0.867
+    ],
+    [
+      "facts_00014",
+      "facts_00046",
+      0.867
+    ],
+    [
+      "facts_00022",
+      "facts_00046",
+      0.867
+    ],
+    [
+      "facts_00030",
+      "facts_00046",
+      0.867
+    ],
+    [
+      "facts_00038",
+      "facts_00046",
+      0.867
+    ],
+    [
+      "facts_00007",
+      "facts_00047",
+      0.857
+    ],
+    [
+      "facts_00015",
+      "facts_00047",
+      0.857
+    ],
+    [
+      "facts_00023",
+      "facts_00047",
+      0.857
+    ],
+    [
+      "facts_00031",
+      "facts_00047",
+      0.857
+    ],
+    [
+      "facts_00039",
+      "facts_00047",
+      0.857
+    ],
+    [
+      "reasoning_00004",
+      "reasoning_00012",
+      0.9
+    ],
+    [
+      "reasoning_00010",
+      "reasoning_00018",
+      0.913
+    ],
+    [
+      "reasoning_00014",
+      "reasoning_00022",
+      0.929
+    ],
+    [
+      "reasoning_00019",
+      "reasoning_00027",
+      0.875
+    ],
+    [
+      "reasoning_00020",
+      "reasoning_00028",
+      0.895
+    ],
+    [
+      "reasoning_00006",
+      "reasoning_00030",
+      0.893
+    ],
+    [
+      "reasoning_00014",
+      "reasoning_00030",
+      0.862
+    ],
+    [
+      "reasoning_00022",
+      "reasoning_00030",
+      0.862
+    ],
+    [
+      "reasoning_00018",
+      "reasoning_00034",
+      0.875
+    ],
+    [
+      "reasoning_00006",
+      "reasoning_00038",
+      0.893
+    ],
+    [
+      "reasoning_00014",
+      "reasoning_00038",
+      0.862
+    ],
+    [
+      "reasoning_00022",
+      "reasoning_00038",
+      0.862
+    ],
+    [
+      "reasoning_00030",
+      "reasoning_00038",
+      0.862
+    ],
+    [
+      "reasoning_00016",
+      "reasoning_00040",
+      0.857
+    ],
+    [
+      "reasoning_00036",
+      "reasoning_00044",
+      0.85
+    ],
+    [
+      "reasoning_00014",
+      "reasoning_00046",
+      0.929
+    ],
+    [
+      "reasoning_00022",
+      "reasoning_00046",
+      0.929
+    ],
+    [
+      "reasoning_00030",
+      "reasoning_00046",
+      0.862
+    ],
+    [
+      "reasoning_00038",
+      "reasoning_00046",
+      0.862
+    ],
+    [
+      "coding_00002",
+      "coding_00010",
+      0.857
+    ],
+    [
+      "coding_00002",
+      "coding_00018",
+      0.857
+    ],
+    [
+      "coding_00010",
+      "coding_00018",
+      0.857
+    ],
+    [
+      "coding_00002",
+      "coding_00026",
+      0.857
+    ],
+    [
+      "coding_00010",
+      "coding_00026",
+      0.857
+    ],
+    [
+      "coding_00018",
+      "coding_00026",
+      0.857
+    ],
+    [
+      "coding_00002",
+      "coding_00034",
+      0.857
+    ],
+    [
+      "coding_00010",
+      "coding_00034",
+      0.857
+    ],
+    [
+      "coding_00018",
+      "coding_00034",
+      0.857
+    ],
+    [
+      "coding_00026",
+      "coding_00034",
+      0.857
+    ],
+    [
+      "coding_00002",
+      "coding_00042",
+      0.857
+    ],
+    [
+      "coding_00010",
+      "coding_00042",
+      0.857
+    ],
+    [
+      "coding_00018",
+      "coding_00042",
+      0.857
+    ],
+    [
+      "coding_00026",
+      "coding_00042",
+      0.857
+    ],
+    [
+      "coding_00034",
+      "coding_00042",
+      0.857
+    ]
+  ],
+  "near_duplicate_threshold": 0.85,
+  "missing_fields": [],
+  "repeated_entities": {
+    "hydrogen": 1,
+    "helium": 1,
+    "lithium": 1,
+    "beryllium": 1,
+    "boron": 1,
+    "carbon": 1,
+    "nitrogen": 1,
+    "oxygen": 1,
+    "fluorine": 1,
+    "neon": 1,
+    "sodium": 1,
+    "magnesium": 1,
+    "aluminium": 1,
+    "silicon": 1,
+    "phosphorus": 1,
+    "sulfur": 1,
+    "chlorine": 1,
+    "argon": 1,
+    "potassium": 1,
+    "calcium": 1,
+    "scandium": 1,
+    "titanium": 1,
+    "vanadium": 1,
+    "chromium": 1,
+    "manganese": 1,
+    "iron": 1,
+    "cobalt": 1,
+    "nickel": 1,
+    "copper": 1,
+    "zinc": 1,
+    "gallium": 1,
+    "germanium": 1,
+    "arsenic": 1,
+    "selenium": 1,
+    "bromine": 1,
+    "krypton": 1,
+    "rubidium": 1,
+    "strontium": 1,
+    "yttrium": 1,
+    "zirconium": 1,
+    "niobium": 1,
+    "molybdenum": 1,
+    "technetium": 1,
+    "ruthenium": 1,
+    "rhodium": 1,
+    "palladium": 1,
+    "silver": 1,
+    "cadmium": 1,
+    "indium": 1,
+    "tin": 1,
+    "99": 2,
+    "16": 1,
+    "23": 1,
+    "89": 1,
+    "77": 2,
+    "34": 1,
+    "74": 1,
+    "75": 2,
+    "25": 4,
+    "5": 1,
+    "19": 2,
+    "21": 3,
+    "29": 3,
+    "50": 1,
+    "51": 3,
+    "24": 2,
+    "31": 1,
+    "86": 1,
+    "82": 2,
+    "14": 1,
+    "40": 2,
+    "97": 2,
+    "32": 1,
+    "95": 2,
+    "4": 1,
+    "60": 4,
+    "72": 1,
+    "15": 1,
+    "64": 3,
+    "78": 2,
+    "83": 3,
+    "26": 1,
+    "76": 1,
+    "61": 1,
+    "42": 1,
+    "13": 2,
+    "96": 2,
+    "87": 1,
+    "88": 1,
+    "8": 1,
+    "33": 2,
+    "18": 3,
+    "54": 1,
+    "7": 1,
+    "79": 2,
+    "85": 3,
+    "6": 2,
+    "11": 4,
+    "69": 3,
+    "62": 2,
+    "52": 1,
+    "48": 1,
+    "37": 1,
+    "49": 2,
+    "10": 1,
+    "53": 1,
+    "80": 1,
+    "93": 1,
+    "Jules": 6,
+    "Charlie": 10,
+    "Hugo": 12,
+    "Grace": 8,
+    "Kiran": 7,
+    "Iris": 7,
+    "Diana": 9,
+    "Bob": 11,
+    "Fatima": 12,
+    "Lina": 15,
+    "Priya": 11,
+    "Maya": 7,
+    "Noah": 9,
+    "Alice": 9,
+    "Evan": 7,
+    "Omar": 10,
+    "jffbae": 1,
+    "gkheed": 1,
+    "igjfki": 1,
+    "fiiehg": 1,
+    "hdabda": 1,
+    "aihacg": 1,
+    "ebkhih": 1,
+    "bgcjea": 1,
+    "ccejfd": 1,
+    "jchahd": 1,
+    "bgckjh": 1,
+    "aadcga": 1,
+    "ffkddj": 1,
+    "ghadjc": 1,
+    "gigejf": 1,
+    "bgdbeh": 1,
+    "daacga": 1,
+    "iajhec": 1,
+    "babfdf": 1,
+    "gckfjh": 1,
+    "cbgadb": 1,
+    "fcagcg": 1,
+    "kjdcck": 1,
+    "gibgdc": 1,
+    "hbhhjh": 1,
+    "hhabif": 1,
+    "gjbjef": 1,
+    "kjcaag": 1,
+    "ihfhig": 1,
+    "dfeekb": 1,
+    "hckjkk": 1,
+    "aihifi": 1,
+    "aceifa": 1,
+    "dgggee": 1,
+    "ibdbdh": 1,
+    "ddfckc": 1,
+    "chhfjb": 1,
+    "gkdkga": 1,
+    "effbac": 1,
+    "jebiai": 1,
+    "bjgbhe": 1,
+    "ffhcdc": 1,
+    "efefje": 1,
+    "egkcbc": 1,
+    "keffhc": 1,
+    "hdgakd": 1,
+    "fedhia": 1,
+    "igfebk": 1,
+    "gkfdgb": 1,
+    "dkefih": 1
+  },
+  "token_methods": {
+    "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B": 200
+  },
+  "warnings": [
+    "Equal counts do not ensure matching.",
+    "Facts are restricted to chemical recall; coding uses code-output prediction.",
+    "Held-out families may share entities and vocabulary with exploratory families.",
+    "Too few held-out families for reliable confirmatory inference in the default pilot."
+  ]
+}

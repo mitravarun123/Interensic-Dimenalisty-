@@ -1,0 +1,17 @@
+model_id: Qwen/Qwen2.5-1.5B
+device: cpu
+dtype: float32
+batch_size: 1
+dataset_path: data/cpu_prompts.jsonl
+output_dir: artifacts/cpu_qwen
+target_count: 32
+split: all
+layers: [0, 7, 14, 21, 28]
+preprocessing: [raw]
+bootstrap: 30
+permutations: 0
+repeats: 2
+sample_sizes: [4, 8]
+
+# High-resolution raster plus editable vector PDF/SVG exports.
+figure_dpi: 600

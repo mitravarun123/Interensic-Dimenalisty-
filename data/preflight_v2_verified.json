@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "errors": [],
+  "design_versions": [
+    "2.0"
+  ],
+  "counts": {
+    "facts": {
+      "evaluation_samples": 80,
+      "evaluation_families": 10,
+      "length_matched_samples": 52,
+      "length_matched_families": 10
+    },
+    "arithmetic": {
+      "evaluation_samples": 80,
+      "evaluation_families": 10,
+      "length_matched_samples": 52,
+      "length_matched_families": 8
+    },
+    "reasoning": {
+      "evaluation_samples": 80,
+      "evaluation_families": 10,
+      "length_matched_samples": 52,
+      "length_matched_families": 8
+    },
+    "coding": {
+      "evaluation_samples": 80,
+      "evaluation_families": 10,
+      "length_matched_samples": 52,
+      "length_matched_families": 7
+    }
+  },
+  "length_matching": {
+    "status": "ok",
+    "bin_width": 4,
+    "shared_bins": [
+      10,
+      11
+    ],
+    "matched_count": 52,
+    "warning": "Bin matching leaves within-bin residual length differences."
+  },
+  "dataset_fingerprint": "95846d1c8e4796d5ce07db828f26cd55e2a9d8ab5af99ab28dc25c52635f08b2",
+  "warnings": [
+    "Matching is within tokenizer bins, not exact continuous equality.",
+    "Matched category family coverage differs; primary CI uses reasoning/facts only.",
+    "Independent family sampling and absence of crossed entity dependence remain assumptions.",
+    "Human ground-truth/ambiguity review is still required; passing preflight does not establish scientific validity."
+  ],
+  "tokenizer_validation": {
+    "model_id": "Qwen/Qwen2.5-1.5B",
+    "revision": "8faed761d45a263340a0528343f099c05c9a4323",
+    "trust_remote_code": false,
+    "model_weights_downloaded": false,
+    "final_token_counts": {
+      "13": 640
+    }
+  }
+}

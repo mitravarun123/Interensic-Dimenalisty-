@@ -1,0 +1,313 @@
+{
+  "recovered_on": "2026-10-26",
+  "cohort": "200-prompt real-model pilot, not version 2",
+  "source_notebook": "/Users/mitravarun/Downloads/Qwen_Colab_Ready.ipynb",
+  "source_notebook_sha256": "a614fa5144c242f9b324d66f3384e479fbd339a215af48c4ea8b20835950990b",
+  "source_results_zip": "/Users/mitravarun/Downloads/intrinsic_dimension_results.zip",
+  "source_results_zip_sha256": "ccd6278b4ec3ff6e6538a8bf89ec3690670317c1b79fe07084add9a164d7c818",
+  "model": {
+    "model_id": "Qwen/Qwen2.5-1.5B",
+    "requested_revision": null,
+    "resolved_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+    "device": "cuda",
+    "dtype": "float32",
+    "dtype_policy": "explicit",
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "tokenizer_name": "Qwen/Qwen2.5-1.5B",
+    "tokenizer_revision": null,
+    "padding_side": "right",
+    "pad_token_id": 151643,
+    "eos_token_id": 151643,
+    "hidden_width": 1536,
+    "transformer_blocks": 28,
+    "deterministic_algorithms": "warn_only",
+    "attention_implementation": "eager",
+    "gpu_name": "Tesla T4"
+  },
+  "notebook_embedded_images": 3,
+  "exact_notebook_image_matches": [
+    {
+      "notebook_cell": 16,
+      "notebook_output": 3,
+      "recovered_path": "figures/02_layerwise_evolution.png",
+      "byte_identical": true
+    },
+    {
+      "notebook_cell": 16,
+      "notebook_output": 4,
+      "recovered_path": "figures/03_pca_spectrum.png",
+      "byte_identical": true
+    },
+    {
+      "notebook_cell": 16,
+      "notebook_output": 5,
+      "recovered_path": "figures/06_length_template_controls.png",
+      "byte_identical": true
+    }
+  ],
+  "files": [
+    {
+      "path": "activations/metadata.json",
+      "bytes": 129639,
+      "sha256": "59405a90eb49bb4ce8840853161e9e1c3e6fdfe08e1be5c7fe1bc5c7fb33d385"
+    },
+    {
+      "path": "datasets/audit.json",
+      "bytes": 10583,
+      "sha256": "f1057239e334b876ee6690a2185772c68683ab5c8132a9e3cfbdc03192e4ae9a"
+    },
+    {
+      "path": "datasets/tokenized_prompts.jsonl",
+      "bytes": 97117,
+      "sha256": "32f466f23edc5e9864dd5a0bac28d742d9853df81564297aeb167c15b4f87c87"
+    },
+    {
+      "path": "figures/01_dimensionality_by_task.pdf",
+      "bytes": 22152,
+      "sha256": "6efc71abd0194fb49065ecfc02d3cdc1bcd5e0b9684b46f62786a405ba0c7f4b"
+    },
+    {
+      "path": "figures/01_dimensionality_by_task.png",
+      "bytes": 521275,
+      "sha256": "8d52a7c94974d6d9b6510d70c972123f991aa8c12be2572f3c8dc9fd9136f3a3",
+      "width": 7024,
+      "height": 4669,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "figures/01_dimensionality_by_task.svg",
+      "bytes": 34580,
+      "sha256": "4f7c629e30b2905ccb932c063e4f9f76ceca2b42c0cb5332e770cae16225d06c"
+    },
+    {
+      "path": "figures/01_dimensionality_by_task_source.csv",
+      "bytes": 2849,
+      "sha256": "54f07d345e9e2859cf481b13981d48b65ab4abef517b4909182972cd396ae248"
+    },
+    {
+      "path": "figures/02_layerwise_evolution.pdf",
+      "bytes": 37204,
+      "sha256": "3a638e153d3cdd3dd9d407b2a7e7ff65553dad0a4c6699854ea8a11f4f826f28"
+    },
+    {
+      "path": "figures/02_layerwise_evolution.png",
+      "bytes": 1804057,
+      "sha256": "40c9716d033c5d20564fd5127181e35049a13a19655a9d00c0cdca0f68f3454d",
+      "width": 8224,
+      "height": 5844,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "figures/02_layerwise_evolution.svg",
+      "bytes": 123912,
+      "sha256": "2d452f044f60a2bbe71daff61138bd5e7a320e51a8afe0b2f260a13c686db087"
+    },
+    {
+      "path": "figures/02_layerwise_evolution_source.csv",
+      "bytes": 66897,
+      "sha256": "2511ce1716f31068873b7094165411c77521e95b4dc0f06a8c1c40f988343a9f"
+    },
+    {
+      "path": "figures/03_pca_spectrum.pdf",
+      "bytes": 22872,
+      "sha256": "d9ac403254d0cf3e535cf5910de13a65f4d34508fe2540ead1f1d348546f0b2e"
+    },
+    {
+      "path": "figures/03_pca_spectrum.png",
+      "bytes": 835704,
+      "sha256": "40c00badb414c915ff5d736ec6f2593fcfff9105dd20c6ad577ebc9bad17b975",
+      "width": 9424,
+      "height": 3198,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "figures/03_pca_spectrum.svg",
+      "bytes": 41380,
+      "sha256": "e81a1117da0a538096e1ae5411c087e0bfd7e14a2e9f94510eacb3a3a93ffd8a"
+    },
+    {
+      "path": "figures/03_pca_spectrum_source.csv",
+      "bytes": 7689,
+      "sha256": "4c7c3515c1e3ce17174d0b4f4a34d7021fd637e13a4bc38db9e2cb96aa97bf72"
+    },
+    {
+      "path": "figures/04_pca_projection.pdf",
+      "bytes": 27209,
+      "sha256": "cee999471c81d9791f7c03686ad48fba68ff3b42f4c3257b71e173869bf539fc"
+    },
+    {
+      "path": "figures/04_pca_projection.png",
+      "bytes": 903724,
+      "sha256": "ca140108940081a79307cef80f34c07b40729233aa17e2246d9521709ba21b65",
+      "width": 5820,
+      "height": 4080,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "figures/04_pca_projection.svg",
+      "bytes": 47648,
+      "sha256": "e5bad6d93d2d7d43e2fd3be019116b843dbdb8c0db9cfd79f516ab9201afd315"
+    },
+    {
+      "path": "figures/04_pca_projection_source.csv",
+      "bytes": 24014,
+      "sha256": "46cabb4053d2cf89dfe9bc367532ff9ade7c96047b75255253cc64cf1e7e97fe"
+    },
+    {
+      "path": "figures/05_robustness.pdf",
+      "bytes": 24433,
+      "sha256": "17857be4166ffe3dabb9ac57540b17f3ec24938d9749c8766eb2d2851360a619"
+    },
+    {
+      "path": "figures/05_robustness.png",
+      "bytes": 459858,
+      "sha256": "0ed426ceed5b1fb5030418a19e3d4f36a0378d82ccc7acb115532b73b42bb40b",
+      "width": 9424,
+      "height": 3492,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "figures/05_robustness.svg",
+      "bytes": 53144,
+      "sha256": "fcb0510a7fda4482caa0b8c43d9371d78a4a7844c41d142a7e15ae003ce9724e"
+    },
+    {
+      "path": "figures/05_robustness_source.csv",
+      "bytes": 5226,
+      "sha256": "11b5cef1c2236b7f2345cab124099bce41e573f4eb686f98a36e29ebfe5cb46e"
+    },
+    {
+      "path": "figures/06_length_template_controls.pdf",
+      "bytes": 26577,
+      "sha256": "b5eaa90aa4d99e24774b717a58ccbce7c8dca8bf97a1afd1c50ca1f747137b52"
+    },
+    {
+      "path": "figures/06_length_template_controls.png",
+      "bytes": 731934,
+      "sha256": "be9709e229c786cd766395f162946e7ec6f77e4fdd9c7569f801eecd89cd13ae",
+      "width": 8823,
+      "height": 3492,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "figures/06_length_template_controls.svg",
+      "bytes": 54096,
+      "sha256": "094c2fed8f8dc42392786d1d74a5aaa233f7f48a470ab847a07471af9d682b0c"
+    },
+    {
+      "path": "figures/06_length_template_controls_source.csv",
+      "bytes": 27490,
+      "sha256": "89a927638525d441360b1c398713567be6bc213a007fd45e6ede306c9d6c5da6"
+    },
+    {
+      "path": "figures/07_two_nn_diagnostics.pdf",
+      "bytes": 22982,
+      "sha256": "49b322c792516b726185e3d7a005cd94681bc034498c0428ac5d08e61b4c9f42"
+    },
+    {
+      "path": "figures/07_two_nn_diagnostics.png",
+      "bytes": 663571,
+      "sha256": "a7e464ff53290312826a5f1bfd8a2f11c45d48d1007eadc40c332562ba61c2ac",
+      "width": 5824,
+      "height": 4080,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "figures/07_two_nn_diagnostics.svg",
+      "bytes": 21824,
+      "sha256": "bb49ae48ac5c9cb4d504127c67f2b06d5b0defeb6f32ed848a112bded3dea3d2"
+    },
+    {
+      "path": "figures/07_two_nn_diagnostics_source.csv",
+      "bytes": 2766,
+      "sha256": "7546ba4c6b367f3c4a1b1e9dfc25c6a1aa66e02aa8fe3730655f8840bff5f0a8"
+    },
+    {
+      "path": "figures/manifest.json",
+      "bytes": 502,
+      "sha256": "8823b354c2a9e91577e4b0af17931468c287f2f654224c5010f5eb7d1d2f1aad"
+    },
+    {
+      "path": "results/analysis.json",
+      "bytes": 21358223,
+      "sha256": "686ed6665e62e132a951b2d5923529c4721c248c5f1f38b6810a519e3d2da1f0"
+    },
+    {
+      "path": "results/comparisons.csv",
+      "bytes": 577401,
+      "sha256": "7eca9fda475b52b5b26efed04ba9726a82eff32a2b265694312a73235020f458"
+    },
+    {
+      "path": "results/diagnostics.json",
+      "bytes": 3334123,
+      "sha256": "e80744bde047a1ec8a895c714f1a2222eec83f1aa4976164aff1a06d610506e9"
+    },
+    {
+      "path": "results/estimates.csv",
+      "bytes": 653892,
+      "sha256": "16ca41db35c9b673cbc37ca8ca4cbabfb36da060dc94f4dee62182e307f04b4d"
+    },
+    {
+      "path": "results/pairwise_comparisons.csv",
+      "bytes": 1358961,
+      "sha256": "b76fa54de78b7613509609fb06663821c11490c3015224817efdd65a029229e1"
+    },
+    {
+      "path": "results/projections.csv",
+      "bytes": 597342,
+      "sha256": "c49003ac81a822fbf4cad5a938726b52670a3753e634b131be11a426a0b3142b"
+    },
+    {
+      "path": "results/research_report.md",
+      "bytes": 8425,
+      "sha256": "a454cd153fa008c3f300ba29382d73de6f08f9efd9740701b046151d417a9772"
+    },
+    {
+      "path": "results/results_summary.json",
+      "bytes": 138030,
+      "sha256": "1eef4a53be7ca7abb76e0ea6077c5b71d1ca65bdcaacd5fd34dcee7b93b2545f"
+    },
+    {
+      "path": "results/robustness.csv",
+      "bytes": 781919,
+      "sha256": "10b730107c975ddceffc918ed5d91f57b53f805aaabd1ea7d43b8268401826b0"
+    },
+    {
+      "path": "results/selection.json",
+      "bytes": 8230,
+      "sha256": "133f9ffc79b835e7fcc49e24804fe176a6ac3ba2e32a59e2a5dd0716cd7969b9"
+    },
+    {
+      "path": "results/spectra.csv",
+      "bytes": 609651,
+      "sha256": "d0d15d78b7dd707e8bbcca2737ea25783747e78f84c0ca1916d37e5801d33005"
+    }
+  ],
+  "notes": [
+    "Original files copied byte-for-byte; no rescaling, regeneration or scientific data changes.",
+    "All seven figure families recovered in 600-DPI PNG and vector PDF/SVG, with source CSVs.",
+    "Results tables, report and available metadata also recovered.",
+    "The activation arrays were excluded from the original results ZIP and cannot be recovered from the notebook images."
+  ]
+}

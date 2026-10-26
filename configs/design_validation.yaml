@@ -1,0 +1,20 @@
+# Validation of v2 sampling/inference only; no transformer outputs or weights.
+device: cpu
+dtype: float32
+dataset_path: data/prompts_v2.jsonl
+dataset_design: v2
+output_dir: artifacts/design_v2_validation
+split: evaluation
+require_preflight: true
+min_families: 8
+min_evaluation_samples: 64
+min_matched_samples: 32
+synthetic_width: 24
+synthetic_layers: 3
+preprocessing: [raw, unit, standardized]
+uncertainty_modes: [raw]
+bootstrap: 500
+permutations: 0
+repeats: 3
+sample_sizes: [32, 48, 64, 80]
+figure_dpi: 600

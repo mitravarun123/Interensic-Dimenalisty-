@@ -1,0 +1,15 @@
+device: cpu
+output_dir: artifacts/synthetic
+seed: 42
+split: all
+synthetic_count: 160
+synthetic_width: 24
+synthetic_layers: 3
+preprocessing: [raw, unit, standardized]
+repeats: 3
+sample_sizes: [8, 16, 32]
+bootstrap: 30
+permutations: 30
+
+# High-resolution raster plus editable vector PDF/SVG exports.
+figure_dpi: 600

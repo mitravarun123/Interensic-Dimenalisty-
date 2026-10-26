@@ -1,0 +1,782 @@
+[
+  {
+    "family": "element_symbol",
+    "question": "Recall the standard chemical symbol for the element {subject} from the periodic table. What symbol identifies this element?",
+    "items": [
+      [
+        "hydrogen",
+        "H"
+      ],
+      [
+        "helium",
+        "He"
+      ],
+      [
+        "lithium",
+        "Li"
+      ],
+      [
+        "beryllium",
+        "Be"
+      ],
+      [
+        "boron",
+        "B"
+      ],
+      [
+        "carbon",
+        "C"
+      ],
+      [
+        "nitrogen",
+        "N"
+      ],
+      [
+        "oxygen",
+        "O"
+      ]
+    ],
+    "source": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+  },
+  {
+    "family": "atomic_number",
+    "question": "From the periodic table, recall the atomic number of {subject}, defined by the number of protons in its nucleus. What is that number?",
+    "items": [
+      [
+        "scandium",
+        "21"
+      ],
+      [
+        "titanium",
+        "22"
+      ],
+      [
+        "vanadium",
+        "23"
+      ],
+      [
+        "chromium",
+        "24"
+      ],
+      [
+        "manganese",
+        "25"
+      ],
+      [
+        "iron",
+        "26"
+      ],
+      [
+        "cobalt",
+        "27"
+      ],
+      [
+        "nickel",
+        "28"
+      ]
+    ],
+    "source": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+  },
+  {
+    "family": "country_alpha2",
+    "question": "Recall the official ISO 3166-1 two-letter country code assigned to {subject}. What two-letter identifier represents this country?",
+    "items": [
+      [
+        "Australia",
+        "AU"
+      ],
+      [
+        "Brazil",
+        "BR"
+      ],
+      [
+        "Chile",
+        "CL"
+      ],
+      [
+        "Ecuador",
+        "EC"
+      ],
+      [
+        "Italy",
+        "IT"
+      ],
+      [
+        "Kenya",
+        "KE"
+      ],
+      [
+        "Mexico",
+        "MX"
+      ],
+      [
+        "Nepal",
+        "NP"
+      ]
+    ],
+    "source": "https://unstats.un.org/unsd/methodology/m49/overview"
+  },
+  {
+    "family": "country_alpha3",
+    "question": "For international country identification, recall the ISO 3166-1 three-letter code for {subject}. What is this country code?",
+    "items": [
+      [
+        "Argentina",
+        "ARG"
+      ],
+      [
+        "Colombia",
+        "COL"
+      ],
+      [
+        "Ghana",
+        "GHA"
+      ],
+      [
+        "Indonesia",
+        "IDN"
+      ],
+      [
+        "Morocco",
+        "MAR"
+      ],
+      [
+        "Peru",
+        "PER"
+      ],
+      [
+        "Sweden",
+        "SWE"
+      ],
+      [
+        "Thailand",
+        "THA"
+      ]
+    ],
+    "source": "https://unstats.un.org/unsd/methodology/m49/overview"
+  },
+  {
+    "family": "un_subregion",
+    "question": "In the United Nations M49 geographic classification, which subregion contains {subject}? Recall the official subregion name used in that classification.",
+    "items": [
+      [
+        "Denmark",
+        "Northern Europe"
+      ],
+      [
+        "France",
+        "Western Europe"
+      ],
+      [
+        "Spain",
+        "Southern Europe"
+      ],
+      [
+        "Poland",
+        "Eastern Europe"
+      ],
+      [
+        "Japan",
+        "Eastern Asia"
+      ],
+      [
+        "India",
+        "Southern Asia"
+      ],
+      [
+        "Egypt",
+        "Northern Africa"
+      ],
+      [
+        "Canada",
+        "Northern America"
+      ]
+    ],
+    "source": "https://unstats.un.org/unsd/methodology/m49/overview"
+  },
+  {
+    "family": "language_alpha2",
+    "question": "For language identification, recall the ISO 639-1 two-letter code for {subject}. What code is assigned to this language?",
+    "items": [
+      [
+        "English",
+        "en"
+      ],
+      [
+        "French",
+        "fr"
+      ],
+      [
+        "German",
+        "de"
+      ],
+      [
+        "Swahili",
+        "sw"
+      ],
+      [
+        "Japanese",
+        "ja"
+      ],
+      [
+        "Korean",
+        "ko"
+      ],
+      [
+        "Tamil",
+        "ta"
+      ],
+      [
+        "Turkish",
+        "tr"
+      ]
+    ],
+    "source": "https://www.loc.gov/standards/iso639-2/php/code_list.php"
+  },
+  {
+    "family": "language_alpha3",
+    "question": "Recall the three-letter ISO 639-2 terminology code for the language {subject}. Use the terminology form when bibliographic and terminology codes differ.",
+    "items": [
+      [
+        "Spanish",
+        "spa"
+      ],
+      [
+        "Hindi",
+        "hin"
+      ],
+      [
+        "Arabic",
+        "ara"
+      ],
+      [
+        "Russian",
+        "rus"
+      ],
+      [
+        "Italian",
+        "ita"
+      ],
+      [
+        "Portuguese",
+        "por"
+      ],
+      [
+        "Dutch",
+        "nld"
+      ],
+      [
+        "Greek",
+        "ell"
+      ]
+    ],
+    "source": "https://www.loc.gov/standards/iso639-2/php/code_list.php"
+  },
+  {
+    "family": "si_prefix_symbol",
+    "question": "The International System of Units assigns a case-sensitive symbol to each decimal prefix. What standard prefix symbol denotes {subject}?",
+    "items": [
+      [
+        "tera",
+        "T"
+      ],
+      [
+        "giga",
+        "G"
+      ],
+      [
+        "mega",
+        "M"
+      ],
+      [
+        "kilo",
+        "k"
+      ],
+      [
+        "hecto",
+        "h"
+      ],
+      [
+        "deka",
+        "da"
+      ],
+      [
+        "deci",
+        "d"
+      ],
+      [
+        "centi",
+        "c"
+      ]
+    ],
+    "source": "https://www.nist.gov/pml/owm/metric-si-prefixes"
+  },
+  {
+    "family": "si_prefix_exponent",
+    "question": "Recall the decimal power associated with the SI prefix {subject}. If its scale factor is written as 10 raised to an integer, what is that exponent?",
+    "items": [
+      [
+        "milli",
+        "-3"
+      ],
+      [
+        "micro",
+        "-6"
+      ],
+      [
+        "nano",
+        "-9"
+      ],
+      [
+        "pico",
+        "-12"
+      ],
+      [
+        "femto",
+        "-15"
+      ],
+      [
+        "atto",
+        "-18"
+      ],
+      [
+        "zepto",
+        "-21"
+      ],
+      [
+        "yocto",
+        "-24"
+      ]
+    ],
+    "source": "https://www.nist.gov/pml/owm/metric-si-prefixes"
+  },
+  {
+    "family": "si_unit_symbol",
+    "question": "Recall the standard case-sensitive symbol for the SI unit called {subject}. What symbol is used to write this unit?",
+    "items": [
+      [
+        "metre",
+        "m"
+      ],
+      [
+        "kilogram",
+        "kg"
+      ],
+      [
+        "second",
+        "s"
+      ],
+      [
+        "ampere",
+        "A"
+      ],
+      [
+        "kelvin",
+        "K"
+      ],
+      [
+        "mole",
+        "mol"
+      ],
+      [
+        "candela",
+        "cd"
+      ],
+      [
+        "radian",
+        "rad"
+      ]
+    ],
+    "source": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2"
+  },
+  {
+    "family": "si_quantity_unit",
+    "question": "The SI defines a specially named coherent derived unit for {subject}. Recall the name of that unit rather than its symbol.",
+    "items": [
+      [
+        "frequency",
+        "hertz"
+      ],
+      [
+        "force",
+        "newton"
+      ],
+      [
+        "pressure",
+        "pascal"
+      ],
+      [
+        "energy",
+        "joule"
+      ],
+      [
+        "power",
+        "watt"
+      ],
+      [
+        "electric charge",
+        "coulomb"
+      ],
+      [
+        "electric potential difference",
+        "volt"
+      ],
+      [
+        "electric resistance",
+        "ohm"
+      ]
+    ],
+    "source": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2"
+  },
+  {
+    "family": "constellation_abbreviation",
+    "question": "The International Astronomical Union assigns a standard three-letter abbreviation to {subject}. What is the official abbreviation of this constellation?",
+    "items": [
+      [
+        "Andromeda",
+        "And"
+      ],
+      [
+        "Aquarius",
+        "Aqr"
+      ],
+      [
+        "Aquila",
+        "Aql"
+      ],
+      [
+        "Aries",
+        "Ari"
+      ],
+      [
+        "Cancer",
+        "Cnc"
+      ],
+      [
+        "Cassiopeia",
+        "Cas"
+      ],
+      [
+        "Cygnus",
+        "Cyg"
+      ],
+      [
+        "Orion",
+        "Ori"
+      ]
+    ],
+    "source": "https://iauarchive.eso.org/public/themes/constellations/"
+  },
+  {
+    "family": "constellation_genitive",
+    "question": "In formal astronomical star naming, the constellation {subject} has a Latin genitive form. Recall that genitive form of its name.",
+    "items": [
+      [
+        "Taurus",
+        "Tauri"
+      ],
+      [
+        "Leo",
+        "Leonis"
+      ],
+      [
+        "Gemini",
+        "Geminorum"
+      ],
+      [
+        "Lyra",
+        "Lyrae"
+      ],
+      [
+        "Pegasus",
+        "Pegasi"
+      ],
+      [
+        "Draco",
+        "Draconis"
+      ],
+      [
+        "Virgo",
+        "Virginis"
+      ],
+      [
+        "Scorpius",
+        "Scorpii"
+      ]
+    ],
+    "source": "https://iauarchive.eso.org/public/themes/constellations/"
+  },
+  {
+    "family": "state_postal_code",
+    "question": "For United States postal addresses, recall the two-letter USPS abbreviation of the state {subject}. What abbreviation identifies this state?",
+    "items": [
+      [
+        "Alabama",
+        "AL"
+      ],
+      [
+        "Alaska",
+        "AK"
+      ],
+      [
+        "Arizona",
+        "AZ"
+      ],
+      [
+        "Arkansas",
+        "AR"
+      ],
+      [
+        "California",
+        "CA"
+      ],
+      [
+        "Colorado",
+        "CO"
+      ],
+      [
+        "Connecticut",
+        "CT"
+      ],
+      [
+        "Delaware",
+        "DE"
+      ]
+    ],
+    "source": "https://pe.usps.com/text/pub28/28apb.htm"
+  },
+  {
+    "family": "planet_order",
+    "question": "Recall the position of {subject} among the eight planets when ordered outward from the Sun. With Mercury counted as position one, what position is this planet?",
+    "items": [
+      [
+        "Mercury",
+        "1"
+      ],
+      [
+        "Venus",
+        "2"
+      ],
+      [
+        "Earth",
+        "3"
+      ],
+      [
+        "Mars",
+        "4"
+      ],
+      [
+        "Jupiter",
+        "5"
+      ],
+      [
+        "Saturn",
+        "6"
+      ],
+      [
+        "Uranus",
+        "7"
+      ],
+      [
+        "Neptune",
+        "8"
+      ]
+    ],
+    "source": "https://science.nasa.gov/solar-system/planets/"
+  },
+  {
+    "family": "planet_class",
+    "question": "Recall the conventional classification of {subject} in our Solar System. Is it a terrestrial planet, a gas giant, or an ice giant?",
+    "items": [
+      [
+        "Mercury",
+        "terrestrial planet"
+      ],
+      [
+        "Venus",
+        "terrestrial planet"
+      ],
+      [
+        "Earth",
+        "terrestrial planet"
+      ],
+      [
+        "Mars",
+        "terrestrial planet"
+      ],
+      [
+        "Jupiter",
+        "gas giant"
+      ],
+      [
+        "Saturn",
+        "gas giant"
+      ],
+      [
+        "Uranus",
+        "ice giant"
+      ],
+      [
+        "Neptune",
+        "ice giant"
+      ]
+    ],
+    "source": "https://science.nasa.gov/solar-system/planets/"
+  },
+  {
+    "family": "greek_letter_name",
+    "question": "In the Greek alphabet used for scientific notation, what is the name of the lowercase letter {subject}? Recall its conventional English name.",
+    "items": [
+      [
+        "α",
+        "alpha"
+      ],
+      [
+        "β",
+        "beta"
+      ],
+      [
+        "γ",
+        "gamma"
+      ],
+      [
+        "δ",
+        "delta"
+      ],
+      [
+        "ε",
+        "epsilon"
+      ],
+      [
+        "ζ",
+        "zeta"
+      ],
+      [
+        "η",
+        "eta"
+      ],
+      [
+        "θ",
+        "theta"
+      ]
+    ],
+    "source": "https://iauarchive.eso.org/static/publications/stylemanual1989.pdf"
+  },
+  {
+    "family": "nato_spelling_word",
+    "question": "In the standard NATO radiotelephony spelling alphabet, which code word represents the letter {subject}? Recall its official spelling, not a synonym.",
+    "items": [
+      [
+        "A",
+        "Alfa"
+      ],
+      [
+        "B",
+        "Bravo"
+      ],
+      [
+        "C",
+        "Charlie"
+      ],
+      [
+        "D",
+        "Delta"
+      ],
+      [
+        "E",
+        "Echo"
+      ],
+      [
+        "F",
+        "Foxtrot"
+      ],
+      [
+        "G",
+        "Golf"
+      ],
+      [
+        "H",
+        "Hotel"
+      ]
+    ],
+    "source": "https://www.nato.int/cps/en/natohq/declassified_136216.htm"
+  },
+  {
+    "family": "currency_alpha3",
+    "question": "Recall the ISO 4217 three-letter code for the currency {subject}. What standard alphabetic identifier denotes this currency in international listings?",
+    "items": [
+      [
+        "Indian rupee",
+        "INR"
+      ],
+      [
+        "Japanese yen",
+        "JPY"
+      ],
+      [
+        "Swiss franc",
+        "CHF"
+      ],
+      [
+        "pound sterling",
+        "GBP"
+      ],
+      [
+        "US dollar",
+        "USD"
+      ],
+      [
+        "Chinese yuan renminbi",
+        "CNY"
+      ],
+      [
+        "Brazilian real",
+        "BRL"
+      ],
+      [
+        "South African rand",
+        "ZAR"
+      ]
+    ],
+    "source": "https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html"
+  },
+  {
+    "family": "country_m49",
+    "question": "Recall the three-digit numerical M49 identifier assigned by the United Nations to {subject}. What is the code, including any leading zero?",
+    "items": [
+      [
+        "Austria",
+        "040"
+      ],
+      [
+        "Belgium",
+        "056"
+      ],
+      [
+        "Finland",
+        "246"
+      ],
+      [
+        "Greece",
+        "300"
+      ],
+      [
+        "Hungary",
+        "348"
+      ],
+      [
+        "Ireland",
+        "372"
+      ],
+      [
+        "Portugal",
+        "620"
+      ],
+      [
+        "Singapore",
+        "702"
+      ]
+    ],
+    "source": "https://unstats.un.org/unsd/methodology/m49/overview"
+  }
+]

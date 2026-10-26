@@ -1,0 +1,4012 @@
+{
+  "cache_key": "f0ac3879651d01910ca962ac126598271cb952330a30af9110d387223991471d",
+  "source": "model",
+  "model": {
+    "model_id": "Qwen/Qwen2.5-1.5B",
+    "requested_revision": null,
+    "resolved_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+    "device": "cuda",
+    "dtype": "float32",
+    "dtype_policy": "explicit",
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "tokenizer_name": "Qwen/Qwen2.5-1.5B",
+    "tokenizer_revision": null,
+    "padding_side": "right",
+    "pad_token_id": 151643,
+    "eos_token_id": 151643,
+    "hidden_width": 1536,
+    "transformer_blocks": 28,
+    "deterministic_algorithms": "warn_only",
+    "attention_implementation": "eager",
+    "gpu_name": "Tesla T4"
+  },
+  "config": {
+    "model_id": "Qwen/Qwen2.5-1.5B",
+    "revision": null,
+    "device": "cuda",
+    "dtype": "float32",
+    "batch_size": 1,
+    "dataset_path": "data/prompts.jsonl",
+    "output_dir": "/content/intrinsic-dimension-transformers/artifacts/qwen_fp32",
+    "cache_dir": "/content/model_cache",
+    "seed": 42,
+    "layers": null,
+    "target_count": 200,
+    "max_tokens": 512,
+    "split": "evaluation",
+    "preprocessing": [
+      "raw",
+      "unit",
+      "standardized"
+    ],
+    "repeats": 5,
+    "sample_sizes": [
+      8,
+      16,
+      32
+    ],
+    "bootstrap": 200,
+    "permutations": 200,
+    "confidence": 0.95,
+    "min_families": 4,
+    "length_bin_width": 4,
+    "synthetic_count": 160,
+    "synthetic_width": 24,
+    "synthetic_layers": 3,
+    "permutation_exchangeable": false,
+    "figure_dpi": 600
+  },
+  "software": {
+    "python": "3.13.15",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.0",
+    "PyYAML": "6.0.3",
+    "torch": "2.11.0+cu130",
+    "transformers": "4.46.3",
+    "tokenizers": "0.20.3",
+    "huggingface-hub": "0.36.2"
+  },
+  "sample_ids": [
+    "facts_00000",
+    "facts_00001",
+    "facts_00002",
+    "facts_00003",
+    "facts_00004",
+    "facts_00005",
+    "facts_00006",
+    "facts_00007",
+    "facts_00008",
+    "facts_00009",
+    "facts_00010",
+    "facts_00011",
+    "facts_00012",
+    "facts_00013",
+    "facts_00014",
+    "facts_00015",
+    "facts_00016",
+    "facts_00017",
+    "facts_00018",
+    "facts_00019",
+    "facts_00020",
+    "facts_00021",
+    "facts_00022",
+    "facts_00023",
+    "facts_00024",
+    "facts_00025",
+    "facts_00026",
+    "facts_00027",
+    "facts_00028",
+    "facts_00029",
+    "facts_00030",
+    "facts_00031",
+    "facts_00032",
+    "facts_00033",
+    "facts_00034",
+    "facts_00035",
+    "facts_00036",
+    "facts_00037",
+    "facts_00038",
+    "facts_00039",
+    "facts_00040",
+    "facts_00041",
+    "facts_00042",
+    "facts_00043",
+    "facts_00044",
+    "facts_00045",
+    "facts_00046",
+    "facts_00047",
+    "facts_00048",
+    "facts_00049",
+    "arithmetic_00000",
+    "arithmetic_00001",
+    "arithmetic_00002",
+    "arithmetic_00003",
+    "arithmetic_00004",
+    "arithmetic_00005",
+    "arithmetic_00006",
+    "arithmetic_00007",
+    "arithmetic_00008",
+    "arithmetic_00009",
+    "arithmetic_00010",
+    "arithmetic_00011",
+    "arithmetic_00012",
+    "arithmetic_00013",
+    "arithmetic_00014",
+    "arithmetic_00015",
+    "arithmetic_00016",
+    "arithmetic_00017",
+    "arithmetic_00018",
+    "arithmetic_00019",
+    "arithmetic_00020",
+    "arithmetic_00021",
+    "arithmetic_00022",
+    "arithmetic_00023",
+    "arithmetic_00024",
+    "arithmetic_00025",
+    "arithmetic_00026",
+    "arithmetic_00027",
+    "arithmetic_00028",
+    "arithmetic_00029",
+    "arithmetic_00030",
+    "arithmetic_00031",
+    "arithmetic_00032",
+    "arithmetic_00033",
+    "arithmetic_00034",
+    "arithmetic_00035",
+    "arithmetic_00036",
+    "arithmetic_00037",
+    "arithmetic_00038",
+    "arithmetic_00039",
+    "arithmetic_00040",
+    "arithmetic_00041",
+    "arithmetic_00042",
+    "arithmetic_00043",
+    "arithmetic_00044",
+    "arithmetic_00045",
+    "arithmetic_00046",
+    "arithmetic_00047",
+    "arithmetic_00048",
+    "arithmetic_00049",
+    "reasoning_00000",
+    "reasoning_00001",
+    "reasoning_00002",
+    "reasoning_00003",
+    "reasoning_00004",
+    "reasoning_00005",
+    "reasoning_00006",
+    "reasoning_00007",
+    "reasoning_00008",
+    "reasoning_00009",
+    "reasoning_00010",
+    "reasoning_00011",
+    "reasoning_00012",
+    "reasoning_00013",
+    "reasoning_00014",
+    "reasoning_00015",
+    "reasoning_00016",
+    "reasoning_00017",
+    "reasoning_00018",
+    "reasoning_00019",
+    "reasoning_00020",
+    "reasoning_00021",
+    "reasoning_00022",
+    "reasoning_00023",
+    "reasoning_00024",
+    "reasoning_00025",
+    "reasoning_00026",
+    "reasoning_00027",
+    "reasoning_00028",
+    "reasoning_00029",
+    "reasoning_00030",
+    "reasoning_00031",
+    "reasoning_00032",
+    "reasoning_00033",
+    "reasoning_00034",
+    "reasoning_00035",
+    "reasoning_00036",
+    "reasoning_00037",
+    "reasoning_00038",
+    "reasoning_00039",
+    "reasoning_00040",
+    "reasoning_00041",
+    "reasoning_00042",
+    "reasoning_00043",
+    "reasoning_00044",
+    "reasoning_00045",
+    "reasoning_00046",
+    "reasoning_00047",
+    "reasoning_00048",
+    "reasoning_00049",
+    "coding_00000",
+    "coding_00001",
+    "coding_00002",
+    "coding_00003",
+    "coding_00004",
+    "coding_00005",
+    "coding_00006",
+    "coding_00007",
+    "coding_00008",
+    "coding_00009",
+    "coding_00010",
+    "coding_00011",
+    "coding_00012",
+    "coding_00013",
+    "coding_00014",
+    "coding_00015",
+    "coding_00016",
+    "coding_00017",
+    "coding_00018",
+    "coding_00019",
+    "coding_00020",
+    "coding_00021",
+    "coding_00022",
+    "coding_00023",
+    "coding_00024",
+    "coding_00025",
+    "coding_00026",
+    "coding_00027",
+    "coding_00028",
+    "coding_00029",
+    "coding_00030",
+    "coding_00031",
+    "coding_00032",
+    "coding_00033",
+    "coding_00034",
+    "coding_00035",
+    "coding_00036",
+    "coding_00037",
+    "coding_00038",
+    "coding_00039",
+    "coding_00040",
+    "coding_00041",
+    "coding_00042",
+    "coding_00043",
+    "coding_00044",
+    "coding_00045",
+    "coding_00046",
+    "coding_00047",
+    "coding_00048",
+    "coding_00049"
+  ],
+  "rows": [
+    {
+      "prompt_id": "facts_00000",
+      "task_category": "facts",
+      "template_id": "facts_family_0",
+      "template_family_index": 0,
+      "prompt": "What is the chemical symbol for hydrogen? Reply with only the answer.",
+      "expected_answer": "H",
+      "token_count": 14,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "hydrogen"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00001",
+      "task_category": "facts",
+      "template_id": "facts_family_1",
+      "template_family_index": 1,
+      "prompt": "Which element has atomic number 2? Reply with only the answer.",
+      "expected_answer": "helium",
+      "token_count": 14,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "helium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00002",
+      "task_category": "facts",
+      "template_id": "facts_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the atomic number of lithium? Reply with only the answer.",
+      "expected_answer": "3",
+      "token_count": 14,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "lithium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00003",
+      "task_category": "facts",
+      "template_id": "facts_family_3",
+      "template_family_index": 3,
+      "prompt": "Name the element represented by Be. Reply with only the answer.",
+      "expected_answer": "beryllium",
+      "token_count": 13,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "beryllium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00004",
+      "task_category": "facts",
+      "template_id": "facts_family_4",
+      "template_family_index": 4,
+      "prompt": "Recall the symbol used for the element boron. Reply with only the answer.",
+      "expected_answer": "B",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "boron"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00005",
+      "task_category": "facts",
+      "template_id": "facts_family_5",
+      "template_family_index": 5,
+      "prompt": "Identify the element at position 6 in the periodic table. Reply with only the answer.",
+      "expected_answer": "carbon",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "carbon"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00006",
+      "task_category": "facts",
+      "template_id": "facts_family_6",
+      "template_family_index": 6,
+      "prompt": "State how many protons a neutral nitrogen atom has. Reply with only the answer.",
+      "expected_answer": "7",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "nitrogen"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00007",
+      "task_category": "facts",
+      "template_id": "facts_family_7",
+      "template_family_index": 7,
+      "prompt": "Which element is denoted by the chemical symbol O? Reply with only the answer.",
+      "expected_answer": "oxygen",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "oxygen"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00008",
+      "task_category": "facts",
+      "template_id": "facts_family_0",
+      "template_family_index": 0,
+      "prompt": "What is the chemical symbol for fluorine? Reply with only the answer.",
+      "expected_answer": "F",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "fluorine"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00009",
+      "task_category": "facts",
+      "template_id": "facts_family_1",
+      "template_family_index": 1,
+      "prompt": "Which element has atomic number 10? Reply with only the answer.",
+      "expected_answer": "neon",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "neon"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00010",
+      "task_category": "facts",
+      "template_id": "facts_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the atomic number of sodium? Reply with only the answer.",
+      "expected_answer": "11",
+      "token_count": 14,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "sodium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00011",
+      "task_category": "facts",
+      "template_id": "facts_family_3",
+      "template_family_index": 3,
+      "prompt": "Name the element represented by Mg. Reply with only the answer.",
+      "expected_answer": "magnesium",
+      "token_count": 13,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "magnesium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00012",
+      "task_category": "facts",
+      "template_id": "facts_family_4",
+      "template_family_index": 4,
+      "prompt": "Recall the symbol used for the element aluminium. Reply with only the answer.",
+      "expected_answer": "Al",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "aluminium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00013",
+      "task_category": "facts",
+      "template_id": "facts_family_5",
+      "template_family_index": 5,
+      "prompt": "Identify the element at position 14 in the periodic table. Reply with only the answer.",
+      "expected_answer": "silicon",
+      "token_count": 20,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "silicon"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00014",
+      "task_category": "facts",
+      "template_id": "facts_family_6",
+      "template_family_index": 6,
+      "prompt": "State how many protons a neutral phosphorus atom has. Reply with only the answer.",
+      "expected_answer": "15",
+      "token_count": 18,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "phosphorus"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00015",
+      "task_category": "facts",
+      "template_id": "facts_family_7",
+      "template_family_index": 7,
+      "prompt": "Which element is denoted by the chemical symbol S? Reply with only the answer.",
+      "expected_answer": "sulfur",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "sulfur"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00016",
+      "task_category": "facts",
+      "template_id": "facts_family_0",
+      "template_family_index": 0,
+      "prompt": "What is the chemical symbol for chlorine? Reply with only the answer.",
+      "expected_answer": "Cl",
+      "token_count": 14,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "chlorine"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00017",
+      "task_category": "facts",
+      "template_id": "facts_family_1",
+      "template_family_index": 1,
+      "prompt": "Which element has atomic number 18? Reply with only the answer.",
+      "expected_answer": "argon",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "argon"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00018",
+      "task_category": "facts",
+      "template_id": "facts_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the atomic number of potassium? Reply with only the answer.",
+      "expected_answer": "19",
+      "token_count": 14,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "potassium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00019",
+      "task_category": "facts",
+      "template_id": "facts_family_3",
+      "template_family_index": 3,
+      "prompt": "Name the element represented by Ca. Reply with only the answer.",
+      "expected_answer": "calcium",
+      "token_count": 13,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "calcium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00020",
+      "task_category": "facts",
+      "template_id": "facts_family_4",
+      "template_family_index": 4,
+      "prompt": "Recall the symbol used for the element scandium. Reply with only the answer.",
+      "expected_answer": "Sc",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "scandium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00021",
+      "task_category": "facts",
+      "template_id": "facts_family_5",
+      "template_family_index": 5,
+      "prompt": "Identify the element at position 22 in the periodic table. Reply with only the answer.",
+      "expected_answer": "titanium",
+      "token_count": 20,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "titanium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00022",
+      "task_category": "facts",
+      "template_id": "facts_family_6",
+      "template_family_index": 6,
+      "prompt": "State how many protons a neutral vanadium atom has. Reply with only the answer.",
+      "expected_answer": "23",
+      "token_count": 18,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "vanadium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00023",
+      "task_category": "facts",
+      "template_id": "facts_family_7",
+      "template_family_index": 7,
+      "prompt": "Which element is denoted by the chemical symbol Cr? Reply with only the answer.",
+      "expected_answer": "chromium",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "chromium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00024",
+      "task_category": "facts",
+      "template_id": "facts_family_0",
+      "template_family_index": 0,
+      "prompt": "What is the chemical symbol for manganese? Reply with only the answer.",
+      "expected_answer": "Mn",
+      "token_count": 14,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "manganese"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00025",
+      "task_category": "facts",
+      "template_id": "facts_family_1",
+      "template_family_index": 1,
+      "prompt": "Which element has atomic number 26? Reply with only the answer.",
+      "expected_answer": "iron",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "iron"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00026",
+      "task_category": "facts",
+      "template_id": "facts_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the atomic number of cobalt? Reply with only the answer.",
+      "expected_answer": "27",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "cobalt"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00027",
+      "task_category": "facts",
+      "template_id": "facts_family_3",
+      "template_family_index": 3,
+      "prompt": "Name the element represented by Ni. Reply with only the answer.",
+      "expected_answer": "nickel",
+      "token_count": 13,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "nickel"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00028",
+      "task_category": "facts",
+      "template_id": "facts_family_4",
+      "template_family_index": 4,
+      "prompt": "Recall the symbol used for the element copper. Reply with only the answer.",
+      "expected_answer": "Cu",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "copper"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00029",
+      "task_category": "facts",
+      "template_id": "facts_family_5",
+      "template_family_index": 5,
+      "prompt": "Identify the element at position 30 in the periodic table. Reply with only the answer.",
+      "expected_answer": "zinc",
+      "token_count": 20,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "zinc"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00030",
+      "task_category": "facts",
+      "template_id": "facts_family_6",
+      "template_family_index": 6,
+      "prompt": "State how many protons a neutral gallium atom has. Reply with only the answer.",
+      "expected_answer": "31",
+      "token_count": 18,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "gallium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00031",
+      "task_category": "facts",
+      "template_id": "facts_family_7",
+      "template_family_index": 7,
+      "prompt": "Which element is denoted by the chemical symbol Ge? Reply with only the answer.",
+      "expected_answer": "germanium",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "germanium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00032",
+      "task_category": "facts",
+      "template_id": "facts_family_0",
+      "template_family_index": 0,
+      "prompt": "What is the chemical symbol for arsenic? Reply with only the answer.",
+      "expected_answer": "As",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "arsenic"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00033",
+      "task_category": "facts",
+      "template_id": "facts_family_1",
+      "template_family_index": 1,
+      "prompt": "Which element has atomic number 34? Reply with only the answer.",
+      "expected_answer": "selenium",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "selenium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00034",
+      "task_category": "facts",
+      "template_id": "facts_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the atomic number of bromine? Reply with only the answer.",
+      "expected_answer": "35",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "bromine"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00035",
+      "task_category": "facts",
+      "template_id": "facts_family_3",
+      "template_family_index": 3,
+      "prompt": "Name the element represented by Kr. Reply with only the answer.",
+      "expected_answer": "krypton",
+      "token_count": 13,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "krypton"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00036",
+      "task_category": "facts",
+      "template_id": "facts_family_4",
+      "template_family_index": 4,
+      "prompt": "Recall the symbol used for the element rubidium. Reply with only the answer.",
+      "expected_answer": "Rb",
+      "token_count": 18,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "rubidium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00037",
+      "task_category": "facts",
+      "template_id": "facts_family_5",
+      "template_family_index": 5,
+      "prompt": "Identify the element at position 38 in the periodic table. Reply with only the answer.",
+      "expected_answer": "strontium",
+      "token_count": 20,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "strontium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00038",
+      "task_category": "facts",
+      "template_id": "facts_family_6",
+      "template_family_index": 6,
+      "prompt": "State how many protons a neutral yttrium atom has. Reply with only the answer.",
+      "expected_answer": "39",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "yttrium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00039",
+      "task_category": "facts",
+      "template_id": "facts_family_7",
+      "template_family_index": 7,
+      "prompt": "Which element is denoted by the chemical symbol Zr? Reply with only the answer.",
+      "expected_answer": "zirconium",
+      "token_count": 18,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "zirconium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00040",
+      "task_category": "facts",
+      "template_id": "facts_family_0",
+      "template_family_index": 0,
+      "prompt": "What is the chemical symbol for niobium? Reply with only the answer.",
+      "expected_answer": "Nb",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "niobium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00041",
+      "task_category": "facts",
+      "template_id": "facts_family_1",
+      "template_family_index": 1,
+      "prompt": "Which element has atomic number 42? Reply with only the answer.",
+      "expected_answer": "molybdenum",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "molybdenum"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00042",
+      "task_category": "facts",
+      "template_id": "facts_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the atomic number of technetium? Reply with only the answer.",
+      "expected_answer": "43",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "technetium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00043",
+      "task_category": "facts",
+      "template_id": "facts_family_3",
+      "template_family_index": 3,
+      "prompt": "Name the element represented by Ru. Reply with only the answer.",
+      "expected_answer": "ruthenium",
+      "token_count": 13,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "ruthenium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00044",
+      "task_category": "facts",
+      "template_id": "facts_family_4",
+      "template_family_index": 4,
+      "prompt": "Recall the symbol used for the element rhodium. Reply with only the answer.",
+      "expected_answer": "Rh",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "rhodium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00045",
+      "task_category": "facts",
+      "template_id": "facts_family_5",
+      "template_family_index": 5,
+      "prompt": "Identify the element at position 46 in the periodic table. Reply with only the answer.",
+      "expected_answer": "palladium",
+      "token_count": 20,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "palladium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00046",
+      "task_category": "facts",
+      "template_id": "facts_family_6",
+      "template_family_index": 6,
+      "prompt": "State how many protons a neutral silver atom has. Reply with only the answer.",
+      "expected_answer": "47",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "silver"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00047",
+      "task_category": "facts",
+      "template_id": "facts_family_7",
+      "template_family_index": 7,
+      "prompt": "Which element is denoted by the chemical symbol Cd? Reply with only the answer.",
+      "expected_answer": "cadmium",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "cadmium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00048",
+      "task_category": "facts",
+      "template_id": "facts_family_0",
+      "template_family_index": 0,
+      "prompt": "What is the chemical symbol for indium? Reply with only the answer.",
+      "expected_answer": "In",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "indium"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "facts_00049",
+      "task_category": "facts",
+      "template_id": "facts_family_1",
+      "template_family_index": 1,
+      "prompt": "Which element has atomic number 50? Reply with only the answer.",
+      "expected_answer": "tin",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "tin"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "iupac_fixture"
+    },
+    {
+      "prompt_id": "arithmetic_00000",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_0",
+      "template_family_index": 0,
+      "prompt": "What is 99 + 16? Reply with only the answer.",
+      "expected_answer": "115",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "99",
+        "16"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00001",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_1",
+      "template_family_index": 1,
+      "prompt": "Calculate 23 multiplied by 89. Reply with only the answer.",
+      "expected_answer": "2047",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "23",
+        "89"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00002",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_2",
+      "template_family_index": 2,
+      "prompt": "What is 2618 divided by 34? Reply with only the answer.",
+      "expected_answer": "77",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "77",
+        "34"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00003",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_3",
+      "template_family_index": 3,
+      "prompt": "If x = 74, what is 75x + 5? Reply with only the answer.",
+      "expected_answer": "5555",
+      "token_count": 23,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "74",
+        "75"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00004",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_4",
+      "template_family_index": 4,
+      "prompt": "Subtract 5 from 30. Reply with only the answer.",
+      "expected_answer": "25",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "25",
+        "5"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00005",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_5",
+      "template_family_index": 5,
+      "prompt": "Compute (75 + 19) times 2. Reply with only the answer.",
+      "expected_answer": "188",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "75",
+        "19"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00006",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_6",
+      "template_family_index": 6,
+      "prompt": "What is the remainder when 610 is divided by 29? Reply with only the answer.",
+      "expected_answer": "1",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "21",
+        "29"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00007",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_7",
+      "template_family_index": 7,
+      "prompt": "Square 50 and subtract 51. Reply with only the answer.",
+      "expected_answer": "2449",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "50",
+        "51"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00008",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_0",
+      "template_family_index": 0,
+      "prompt": "What is 24 + 29? Reply with only the answer.",
+      "expected_answer": "53",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "24",
+        "29"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00009",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_1",
+      "template_family_index": 1,
+      "prompt": "Calculate 31 multiplied by 51. Reply with only the answer.",
+      "expected_answer": "1581",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "31",
+        "51"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00010",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_2",
+      "template_family_index": 2,
+      "prompt": "What is 1806 divided by 86? Reply with only the answer.",
+      "expected_answer": "21",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "21",
+        "86"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00011",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_3",
+      "template_family_index": 3,
+      "prompt": "If x = 82, what is 14x + 5? Reply with only the answer.",
+      "expected_answer": "1153",
+      "token_count": 23,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "82",
+        "14"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00012",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_4",
+      "template_family_index": 4,
+      "prompt": "Subtract 97 from 137. Reply with only the answer.",
+      "expected_answer": "40",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "40",
+        "97"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00013",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_5",
+      "template_family_index": 5,
+      "prompt": "Compute (32 + 95) times 2. Reply with only the answer.",
+      "expected_answer": "254",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "32",
+        "95"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00014",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_6",
+      "template_family_index": 6,
+      "prompt": "What is the remainder when 241 is divided by 60? Reply with only the answer.",
+      "expected_answer": "1",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "4",
+        "60"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00015",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_7",
+      "template_family_index": 7,
+      "prompt": "Square 72 and subtract 15. Reply with only the answer.",
+      "expected_answer": "5169",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "72",
+        "15"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00016",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_0",
+      "template_family_index": 0,
+      "prompt": "What is 60 + 19? Reply with only the answer.",
+      "expected_answer": "79",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "60",
+        "19"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00017",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_1",
+      "template_family_index": 1,
+      "prompt": "Calculate 64 multiplied by 78. Reply with only the answer.",
+      "expected_answer": "4992",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "64",
+        "78"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00018",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_2",
+      "template_family_index": 2,
+      "prompt": "What is 2158 divided by 26? Reply with only the answer.",
+      "expected_answer": "83",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "83",
+        "26"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00019",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_3",
+      "template_family_index": 3,
+      "prompt": "If x = 76, what is 61x + 5? Reply with only the answer.",
+      "expected_answer": "4641",
+      "token_count": 23,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "76",
+        "61"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00020",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_4",
+      "template_family_index": 4,
+      "prompt": "Subtract 13 from 55. Reply with only the answer.",
+      "expected_answer": "42",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "42",
+        "13"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00021",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_5",
+      "template_family_index": 5,
+      "prompt": "Compute (96 + 87) times 2. Reply with only the answer.",
+      "expected_answer": "366",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "96",
+        "87"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00022",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_6",
+      "template_family_index": 6,
+      "prompt": "What is the remainder when 2476 is divided by 99? Reply with only the answer.",
+      "expected_answer": "1",
+      "token_count": 23,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "25",
+        "99"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00023",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_7",
+      "template_family_index": 7,
+      "prompt": "Square 88 and subtract 8. Reply with only the answer.",
+      "expected_answer": "7736",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "88",
+        "8"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00024",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_0",
+      "template_family_index": 0,
+      "prompt": "What is 82 + 33? Reply with only the answer.",
+      "expected_answer": "115",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "82",
+        "33"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00025",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_1",
+      "template_family_index": 1,
+      "prompt": "Calculate 60 multiplied by 18. Reply with only the answer.",
+      "expected_answer": "1080",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "60",
+        "18"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00026",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_2",
+      "template_family_index": 2,
+      "prompt": "What is 702 divided by 54? Reply with only the answer.",
+      "expected_answer": "13",
+      "token_count": 18,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "13",
+        "54"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00027",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_3",
+      "template_family_index": 3,
+      "prompt": "If x = 83, what is 7x + 5? Reply with only the answer.",
+      "expected_answer": "586",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "83",
+        "7"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00028",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_4",
+      "template_family_index": 4,
+      "prompt": "Subtract 83 from 123. Reply with only the answer.",
+      "expected_answer": "40",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "40",
+        "83"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00029",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_5",
+      "template_family_index": 5,
+      "prompt": "Compute (79 + 85) times 2. Reply with only the answer.",
+      "expected_answer": "328",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "79",
+        "85"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00030",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_6",
+      "template_family_index": 6,
+      "prompt": "What is the remainder when 601 is divided by 24? Reply with only the answer.",
+      "expected_answer": "1",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "25",
+        "24"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00031",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_7",
+      "template_family_index": 7,
+      "prompt": "Square 29 and subtract 6. Reply with only the answer.",
+      "expected_answer": "835",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "29",
+        "6"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00032",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_0",
+      "template_family_index": 0,
+      "prompt": "What is 11 + 11? Reply with only the answer.",
+      "expected_answer": "22",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "11",
+        "11"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00033",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_1",
+      "template_family_index": 1,
+      "prompt": "Calculate 69 multiplied by 11. Reply with only the answer.",
+      "expected_answer": "759",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "69",
+        "11"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00034",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_2",
+      "template_family_index": 2,
+      "prompt": "What is 3201 divided by 33? Reply with only the answer.",
+      "expected_answer": "97",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "97",
+        "33"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00035",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_3",
+      "template_family_index": 3,
+      "prompt": "If x = 62, what is 78x + 5? Reply with only the answer.",
+      "expected_answer": "4841",
+      "token_count": 23,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "62",
+        "78"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00036",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_4",
+      "template_family_index": 4,
+      "prompt": "Subtract 96 from 148. Reply with only the answer.",
+      "expected_answer": "52",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "52",
+        "96"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00037",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_5",
+      "template_family_index": 5,
+      "prompt": "Compute (69 + 64) times 2. Reply with only the answer.",
+      "expected_answer": "266",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "69",
+        "64"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00038",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_6",
+      "template_family_index": 6,
+      "prompt": "What is the remainder when 865 is divided by 18? Reply with only the answer.",
+      "expected_answer": "1",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "48",
+        "18"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00039",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_7",
+      "template_family_index": 7,
+      "prompt": "Square 51 and subtract 37. Reply with only the answer.",
+      "expected_answer": "2564",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "51",
+        "37"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00040",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_0",
+      "template_family_index": 0,
+      "prompt": "What is 69 + 25? Reply with only the answer.",
+      "expected_answer": "94",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "69",
+        "25"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00041",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_1",
+      "template_family_index": 1,
+      "prompt": "Calculate 85 multiplied by 49. Reply with only the answer.",
+      "expected_answer": "4165",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "85",
+        "49"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00042",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_2",
+      "template_family_index": 2,
+      "prompt": "What is 4165 divided by 49? Reply with only the answer.",
+      "expected_answer": "85",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "85",
+        "49"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00043",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_3",
+      "template_family_index": 3,
+      "prompt": "If x = 77, what is 64x + 5? Reply with only the answer.",
+      "expected_answer": "4933",
+      "token_count": 23,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "77",
+        "64"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00044",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_4",
+      "template_family_index": 4,
+      "prompt": "Subtract 60 from 81. Reply with only the answer.",
+      "expected_answer": "21",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "21",
+        "60"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00045",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_5",
+      "template_family_index": 5,
+      "prompt": "Compute (95 + 62) times 2. Reply with only the answer.",
+      "expected_answer": "314",
+      "token_count": 19,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "95",
+        "62"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00046",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_6",
+      "template_family_index": 6,
+      "prompt": "What is the remainder when 531 is divided by 53? Reply with only the answer.",
+      "expected_answer": "1",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "10",
+        "53"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00047",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_7",
+      "template_family_index": 7,
+      "prompt": "Square 18 and subtract 80. Reply with only the answer.",
+      "expected_answer": "244",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "18",
+        "80"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00048",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_0",
+      "template_family_index": 0,
+      "prompt": "What is 79 + 93? Reply with only the answer.",
+      "expected_answer": "172",
+      "token_count": 16,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "79",
+        "93"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "arithmetic_00049",
+      "task_category": "arithmetic",
+      "template_id": "arithmetic_family_1",
+      "template_family_index": 1,
+      "prompt": "Calculate 6 multiplied by 11. Reply with only the answer.",
+      "expected_answer": "66",
+      "token_count": 15,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "6",
+        "11"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_integer"
+    },
+    {
+      "prompt_id": "reasoning_00000",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_0",
+      "template_family_index": 0,
+      "prompt": "Jules is older than Charlie. Charlie is older than Hugo. Who is oldest? Reply with only the answer.",
+      "expected_answer": "Jules",
+      "token_count": 23,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Jules",
+        "Charlie",
+        "Hugo"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00001",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_1",
+      "template_family_index": 1,
+      "prompt": "All Grace objects are Kiran objects. All Kiran objects are Iris objects. Are all Grace objects Iris objects? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 29,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Grace",
+        "Kiran",
+        "Iris"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00002",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_2",
+      "template_family_index": 2,
+      "prompt": "An alarm activates exactly when both sensors trigger. Sensor Diana is false and sensor Iris is true. Does it activate? Reply with only the answer.",
+      "expected_answer": "no",
+      "token_count": 29,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Diana",
+        "Iris",
+        "Charlie"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00003",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_3",
+      "template_family_index": 3,
+      "prompt": "Hugo is left of Bob, and Bob is left of Kiran. Who is furthest right? Reply with only the answer.",
+      "expected_answer": "Kiran",
+      "token_count": 27,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Hugo",
+        "Bob",
+        "Kiran"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00004",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_4",
+      "template_family_index": 4,
+      "prompt": "The lamp is on exactly when at least one switch is on. Switch Kiran is false and switch Fatima is true. Is the lamp on? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 36,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Kiran",
+        "Fatima",
+        "Lina"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00005",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_5",
+      "template_family_index": 5,
+      "prompt": "Hugo has more coins than Priya. Fatima has fewer coins than Priya. Who has the fewest coins? Reply with only the answer.",
+      "expected_answer": "Fatima",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Hugo",
+        "Priya",
+        "Fatima"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00006",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_6",
+      "template_family_index": 6,
+      "prompt": "A gate opens exactly when one of two inputs is true, but not both. Input Lina is true and input Hugo is true. Does it open? Reply with only the answer.",
+      "expected_answer": "no",
+      "token_count": 37,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Lina",
+        "Hugo",
+        "Grace"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00007",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_7",
+      "template_family_index": 7,
+      "prompt": "Maya finished before Noah; Noah finished before Fatima. Who finished second? Reply with only the answer.",
+      "expected_answer": "Noah",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Maya",
+        "Noah",
+        "Fatima"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00008",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_0",
+      "template_family_index": 0,
+      "prompt": "Kiran is older than Alice. Alice is older than Noah. Who is oldest? Reply with only the answer.",
+      "expected_answer": "Kiran",
+      "token_count": 23,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Kiran",
+        "Alice",
+        "Noah"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00009",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_1",
+      "template_family_index": 1,
+      "prompt": "All Iris objects are Priya objects. All Priya objects are Bob objects. Are all Iris objects Bob objects? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 29,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Iris",
+        "Priya",
+        "Bob"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00010",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_2",
+      "template_family_index": 2,
+      "prompt": "An alarm activates exactly when both sensors trigger. Sensor Grace is false and sensor Bob is false. Does it activate? Reply with only the answer.",
+      "expected_answer": "no",
+      "token_count": 29,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Grace",
+        "Bob",
+        "Lina"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00011",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_3",
+      "template_family_index": 3,
+      "prompt": "Grace is left of Evan, and Evan is left of Alice. Who is furthest right? Reply with only the answer.",
+      "expected_answer": "Alice",
+      "token_count": 25,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Grace",
+        "Evan",
+        "Alice"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00012",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_4",
+      "template_family_index": 4,
+      "prompt": "The lamp is on exactly when at least one switch is on. Switch Fatima is true and switch Omar is false. Is the lamp on? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 35,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Fatima",
+        "Omar",
+        "Alice"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00013",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_5",
+      "template_family_index": 5,
+      "prompt": "Priya has more coins than Jules. Bob has fewer coins than Jules. Who has the fewest coins? Reply with only the answer.",
+      "expected_answer": "Bob",
+      "token_count": 30,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Priya",
+        "Jules",
+        "Bob"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00014",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_6",
+      "template_family_index": 6,
+      "prompt": "A gate opens exactly when one of two inputs is true, but not both. Input Noah is false and input Priya is true. Does it open? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 37,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Noah",
+        "Priya",
+        "Jules"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00015",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_7",
+      "template_family_index": 7,
+      "prompt": "Diana finished before Maya; Maya finished before Kiran. Who finished second? Reply with only the answer.",
+      "expected_answer": "Maya",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Diana",
+        "Maya",
+        "Kiran"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00016",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_0",
+      "template_family_index": 0,
+      "prompt": "Charlie is older than Omar. Omar is older than Alice. Who is oldest? Reply with only the answer.",
+      "expected_answer": "Charlie",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Charlie",
+        "Omar",
+        "Alice"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00017",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_1",
+      "template_family_index": 1,
+      "prompt": "All Evan objects are Noah objects. All Noah objects are Diana objects. Are all Evan objects Diana objects? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 27,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Evan",
+        "Noah",
+        "Diana"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00018",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_2",
+      "template_family_index": 2,
+      "prompt": "An alarm activates exactly when both sensors trigger. Sensor Bob is false and sensor Lina is false. Does it activate? Reply with only the answer.",
+      "expected_answer": "no",
+      "token_count": 30,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Bob",
+        "Lina",
+        "Noah"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00019",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_3",
+      "template_family_index": 3,
+      "prompt": "Charlie is left of Bob, and Bob is left of Priya. Who is furthest right? Reply with only the answer.",
+      "expected_answer": "Priya",
+      "token_count": 26,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Charlie",
+        "Bob",
+        "Priya"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00020",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_4",
+      "template_family_index": 4,
+      "prompt": "The lamp is on exactly when at least one switch is on. Switch Hugo is false and switch Maya is false. Is the lamp on? Reply with only the answer.",
+      "expected_answer": "no",
+      "token_count": 34,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Hugo",
+        "Maya",
+        "Bob"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00021",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_5",
+      "template_family_index": 5,
+      "prompt": "Diana has more coins than Lina. Bob has fewer coins than Lina. Who has the fewest coins? Reply with only the answer.",
+      "expected_answer": "Bob",
+      "token_count": 30,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Diana",
+        "Lina",
+        "Bob"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00022",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_6",
+      "template_family_index": 6,
+      "prompt": "A gate opens exactly when one of two inputs is true, but not both. Input Jules is true and input Priya is false. Does it open? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 38,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Jules",
+        "Priya",
+        "Alice"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00023",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_7",
+      "template_family_index": 7,
+      "prompt": "Fatima finished before Charlie; Charlie finished before Bob. Who finished second? Reply with only the answer.",
+      "expected_answer": "Charlie",
+      "token_count": 21,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Fatima",
+        "Charlie",
+        "Bob"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00024",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_0",
+      "template_family_index": 0,
+      "prompt": "Hugo is older than Evan. Evan is older than Lina. Who is oldest? Reply with only the answer.",
+      "expected_answer": "Hugo",
+      "token_count": 24,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Hugo",
+        "Evan",
+        "Lina"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00025",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_1",
+      "template_family_index": 1,
+      "prompt": "All Noah objects are Evan objects. All Evan objects are Iris objects. Are all Noah objects Iris objects? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 27,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Noah",
+        "Evan",
+        "Iris"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00026",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_2",
+      "template_family_index": 2,
+      "prompt": "An alarm activates exactly when both sensors trigger. Sensor Omar is false and sensor Charlie is true. Does it activate? Reply with only the answer.",
+      "expected_answer": "no",
+      "token_count": 29,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Omar",
+        "Charlie",
+        "Grace"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00027",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_3",
+      "template_family_index": 3,
+      "prompt": "Bob is left of Grace, and Grace is left of Priya. Who is furthest right? Reply with only the answer.",
+      "expected_answer": "Priya",
+      "token_count": 26,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Bob",
+        "Grace",
+        "Priya"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00028",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_4",
+      "template_family_index": 4,
+      "prompt": "The lamp is on exactly when at least one switch is on. Switch Maya is false and switch Iris is false. Is the lamp on? Reply with only the answer.",
+      "expected_answer": "no",
+      "token_count": 34,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Maya",
+        "Iris",
+        "Grace"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00029",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_5",
+      "template_family_index": 5,
+      "prompt": "Fatima has more coins than Maya. Diana has fewer coins than Maya. Who has the fewest coins? Reply with only the answer.",
+      "expected_answer": "Diana",
+      "token_count": 28,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Fatima",
+        "Maya",
+        "Diana"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00030",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_6",
+      "template_family_index": 6,
+      "prompt": "A gate opens exactly when one of two inputs is true, but not both. Input Hugo is true and input Evan is false. Does it open? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 36,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Hugo",
+        "Evan",
+        "Grace"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00031",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_7",
+      "template_family_index": 7,
+      "prompt": "Hugo finished before Lina; Lina finished before Iris. Who finished second? Reply with only the answer.",
+      "expected_answer": "Lina",
+      "token_count": 23,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Hugo",
+        "Lina",
+        "Iris"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00032",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_0",
+      "template_family_index": 0,
+      "prompt": "Fatima is older than Diana. Diana is older than Lina. Who is oldest? Reply with only the answer.",
+      "expected_answer": "Fatima",
+      "token_count": 24,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Fatima",
+        "Diana",
+        "Lina"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00033",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_1",
+      "template_family_index": 1,
+      "prompt": "All Fatima objects are Omar objects. All Omar objects are Iris objects. Are all Fatima objects Iris objects? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 29,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Fatima",
+        "Omar",
+        "Iris"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00034",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_2",
+      "template_family_index": 2,
+      "prompt": "An alarm activates exactly when both sensors trigger. Sensor Priya is false and sensor Lina is true. Does it activate? Reply with only the answer.",
+      "expected_answer": "no",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Priya",
+        "Lina",
+        "Hugo"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00035",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_3",
+      "template_family_index": 3,
+      "prompt": "Fatima is left of Hugo, and Hugo is left of Lina. Who is furthest right? Reply with only the answer.",
+      "expected_answer": "Lina",
+      "token_count": 27,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Fatima",
+        "Hugo",
+        "Lina"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00036",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_4",
+      "template_family_index": 4,
+      "prompt": "The lamp is on exactly when at least one switch is on. Switch Bob is false and switch Alice is true. Is the lamp on? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 34,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Bob",
+        "Alice",
+        "Lina"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00037",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_5",
+      "template_family_index": 5,
+      "prompt": "Alice has more coins than Evan. Lina has fewer coins than Evan. Who has the fewest coins? Reply with only the answer.",
+      "expected_answer": "Lina",
+      "token_count": 28,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Alice",
+        "Evan",
+        "Lina"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00038",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_6",
+      "template_family_index": 6,
+      "prompt": "A gate opens exactly when one of two inputs is true, but not both. Input Omar is false and input Lina is true. Does it open? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 37,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Omar",
+        "Lina",
+        "Fatima"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00039",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_7",
+      "template_family_index": 7,
+      "prompt": "Priya finished before Hugo; Hugo finished before Fatima. Who finished second? Reply with only the answer.",
+      "expected_answer": "Hugo",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Priya",
+        "Hugo",
+        "Fatima"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00040",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_0",
+      "template_family_index": 0,
+      "prompt": "Kiran is older than Omar. Omar is older than Charlie. Who is oldest? Reply with only the answer.",
+      "expected_answer": "Kiran",
+      "token_count": 23,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Kiran",
+        "Omar",
+        "Charlie"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00041",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_1",
+      "template_family_index": 1,
+      "prompt": "All Alice objects are Kiran objects. All Kiran objects are Diana objects. Are all Alice objects Diana objects? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 29,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Alice",
+        "Kiran",
+        "Diana"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00042",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_2",
+      "template_family_index": 2,
+      "prompt": "An alarm activates exactly when both sensors trigger. Sensor Fatima is true and sensor Maya is true. Does it activate? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 30,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Fatima",
+        "Maya",
+        "Omar"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00043",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_3",
+      "template_family_index": 3,
+      "prompt": "Charlie is left of Noah, and Noah is left of Jules. Who is furthest right? Reply with only the answer.",
+      "expected_answer": "Jules",
+      "token_count": 26,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Charlie",
+        "Noah",
+        "Jules"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00044",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_4",
+      "template_family_index": 4,
+      "prompt": "The lamp is on exactly when at least one switch is on. Switch Alice is false and switch Lina is false. Is the lamp on? Reply with only the answer.",
+      "expected_answer": "no",
+      "token_count": 35,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Alice",
+        "Lina",
+        "Omar"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00045",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_5",
+      "template_family_index": 5,
+      "prompt": "Diana has more coins than Charlie. Omar has fewer coins than Charlie. Who has the fewest coins? Reply with only the answer.",
+      "expected_answer": "Omar",
+      "token_count": 28,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Diana",
+        "Charlie",
+        "Omar"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00046",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_6",
+      "template_family_index": 6,
+      "prompt": "A gate opens exactly when one of two inputs is true, but not both. Input Charlie is false and input Priya is false. Does it open? Reply with only the answer.",
+      "expected_answer": "no",
+      "token_count": 37,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Charlie",
+        "Priya",
+        "Hugo"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00047",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_7",
+      "template_family_index": 7,
+      "prompt": "Diana finished before Maya; Maya finished before Noah. Who finished second? Reply with only the answer.",
+      "expected_answer": "Maya",
+      "token_count": 21,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "Diana",
+        "Maya",
+        "Noah"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00048",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_0",
+      "template_family_index": 0,
+      "prompt": "Jules is older than Omar. Omar is older than Lina. Who is oldest? Reply with only the answer.",
+      "expected_answer": "Jules",
+      "token_count": 24,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Jules",
+        "Omar",
+        "Lina"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "reasoning_00049",
+      "task_category": "reasoning",
+      "template_id": "reasoning_family_1",
+      "template_family_index": 1,
+      "prompt": "All Noah objects are Priya objects. All Priya objects are Evan objects. Are all Noah objects Evan objects? Reply with only the answer.",
+      "expected_answer": "yes",
+      "token_count": 29,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "Noah",
+        "Priya",
+        "Evan"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "verified_relational_or_boolean"
+    },
+    {
+      "prompt_id": "coding_00000",
+      "task_category": "coding",
+      "template_id": "coding_family_0",
+      "template_family_index": 0,
+      "prompt": "In Python, what is sum([39, 6, 3, 20, 14])? Reply with only the answer.",
+      "expected_answer": "82",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "jffbae"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00001",
+      "task_category": "coding",
+      "template_id": "coding_family_1",
+      "template_family_index": 1,
+      "prompt": "What does Python max([3, 2, -7, -2, -19]) return? Reply with only the answer.",
+      "expected_answer": "3",
+      "token_count": 28,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "gkheed"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00002",
+      "task_category": "coding",
+      "template_id": "coding_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the output of 'igjfki'[::-1] in Python? Reply with only the answer.",
+      "expected_answer": "ikfjgi",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "igjfki"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00003",
+      "task_category": "coding",
+      "template_id": "coding_family_3",
+      "template_family_index": 3,
+      "prompt": "What does sorted([34, 12, 40, -15, -13]) return in Python? Reply with only the answer.",
+      "expected_answer": "[-15, -13, 12, 34, 40]",
+      "token_count": 33,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "fiiehg"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00004",
+      "task_category": "coding",
+      "template_id": "coding_family_4",
+      "template_family_index": 4,
+      "prompt": "What is len('hdabda') in Python? Reply with only the answer.",
+      "expected_answer": "6",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "hdabda"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00005",
+      "task_category": "coding",
+      "template_id": "coding_family_5",
+      "template_family_index": 5,
+      "prompt": "What is the output of [x * 2 for x in [12, 2, 48, -4, 8]]? Reply with only the answer.",
+      "expected_answer": "[24, 4, 96, -8, 16]",
+      "token_count": 37,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "aihacg"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00006",
+      "task_category": "coding",
+      "template_id": "coding_family_6",
+      "template_family_index": 6,
+      "prompt": "What does min([-18, -17, 6, 46, -17]) return in Python? Reply with only the answer.",
+      "expected_answer": "-18",
+      "token_count": 32,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "ebkhih"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00007",
+      "task_category": "coding",
+      "template_id": "coding_family_7",
+      "template_family_index": 7,
+      "prompt": "What does list(reversed([36, 6, -17, 43, -4])) return in Python? Reply with only the answer.",
+      "expected_answer": "[-4, 43, -17, 6, 36]",
+      "token_count": 33,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "bgcjea"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00008",
+      "task_category": "coding",
+      "template_id": "coding_family_0",
+      "template_family_index": 0,
+      "prompt": "In Python, what is sum([8, 28, 42, 22, 27])? Reply with only the answer.",
+      "expected_answer": "127",
+      "token_count": 32,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "ccejfd"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00009",
+      "task_category": "coding",
+      "template_id": "coding_family_1",
+      "template_family_index": 1,
+      "prompt": "What does Python max([7, -12, -1, 18, 42]) return? Reply with only the answer.",
+      "expected_answer": "42",
+      "token_count": 30,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "jchahd"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00010",
+      "task_category": "coding",
+      "template_id": "coding_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the output of 'bgckjh'[::-1] in Python? Reply with only the answer.",
+      "expected_answer": "hjkcgb",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "bgckjh"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00011",
+      "task_category": "coding",
+      "template_id": "coding_family_3",
+      "template_family_index": 3,
+      "prompt": "What does sorted([14, 4, -11, -13, 5]) return in Python? Reply with only the answer.",
+      "expected_answer": "[-13, -11, 4, 5, 14]",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "aadcga"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00012",
+      "task_category": "coding",
+      "template_id": "coding_family_4",
+      "template_family_index": 4,
+      "prompt": "What is len('ffkddj') in Python? Reply with only the answer.",
+      "expected_answer": "6",
+      "token_count": 18,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "ffkddj"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00013",
+      "task_category": "coding",
+      "template_id": "coding_family_5",
+      "template_family_index": 5,
+      "prompt": "What is the output of [x * 2 for x in [17, 48, 31, -5, 21]]? Reply with only the answer.",
+      "expected_answer": "[34, 96, 62, -10, 42]",
+      "token_count": 39,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "ghadjc"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00014",
+      "task_category": "coding",
+      "template_id": "coding_family_6",
+      "template_family_index": 6,
+      "prompt": "What does min([-1, -16, 19, -3, 35]) return in Python? Reply with only the answer.",
+      "expected_answer": "-16",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "gigejf"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00015",
+      "task_category": "coding",
+      "template_id": "coding_family_7",
+      "template_family_index": 7,
+      "prompt": "What does list(reversed([43, -2, 35, 12, -8])) return in Python? Reply with only the answer.",
+      "expected_answer": "[-8, 12, 35, -2, 43]",
+      "token_count": 33,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "bgdbeh"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00016",
+      "task_category": "coding",
+      "template_id": "coding_family_0",
+      "template_family_index": 0,
+      "prompt": "In Python, what is sum([-18, 45, 47, 31, -13])? Reply with only the answer.",
+      "expected_answer": "92",
+      "token_count": 33,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "daacga"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00017",
+      "task_category": "coding",
+      "template_id": "coding_family_1",
+      "template_family_index": 1,
+      "prompt": "What does Python max([-17, 39, -13, 24, 6]) return? Reply with only the answer.",
+      "expected_answer": "39",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "iajhec"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00018",
+      "task_category": "coding",
+      "template_id": "coding_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the output of 'babfdf'[::-1] in Python? Reply with only the answer.",
+      "expected_answer": "fdfbab",
+      "token_count": 21,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "babfdf"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00019",
+      "task_category": "coding",
+      "template_id": "coding_family_3",
+      "template_family_index": 3,
+      "prompt": "What does sorted([38, 17, -2, -4, 2]) return in Python? Reply with only the answer.",
+      "expected_answer": "[-4, -2, 2, 17, 38]",
+      "token_count": 30,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "gckfjh"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00020",
+      "task_category": "coding",
+      "template_id": "coding_family_4",
+      "template_family_index": 4,
+      "prompt": "What is len('cbgadb') in Python? Reply with only the answer.",
+      "expected_answer": "6",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "cbgadb"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00021",
+      "task_category": "coding",
+      "template_id": "coding_family_5",
+      "template_family_index": 5,
+      "prompt": "What is the output of [x * 2 for x in [-18, -10, -13, 29, 23]]? Reply with only the answer.",
+      "expected_answer": "[-36, -20, -26, 58, 46]",
+      "token_count": 40,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "fcagcg"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00022",
+      "task_category": "coding",
+      "template_id": "coding_family_6",
+      "template_family_index": 6,
+      "prompt": "What does min([23, 12, -9, 42, 34]) return in Python? Reply with only the answer.",
+      "expected_answer": "-9",
+      "token_count": 32,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "kjdcck"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00023",
+      "task_category": "coding",
+      "template_id": "coding_family_7",
+      "template_family_index": 7,
+      "prompt": "What does list(reversed([5, 31, 36, -10, 2])) return in Python? Reply with only the answer.",
+      "expected_answer": "[2, -10, 36, 31, 5]",
+      "token_count": 33,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "gibgdc"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00024",
+      "task_category": "coding",
+      "template_id": "coding_family_0",
+      "template_family_index": 0,
+      "prompt": "In Python, what is sum([-18, 31, 4, 6, -19])? Reply with only the answer.",
+      "expected_answer": "4",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "hbhhjh"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00025",
+      "task_category": "coding",
+      "template_id": "coding_family_1",
+      "template_family_index": 1,
+      "prompt": "What does Python max([21, -4, -12, 34, -10]) return? Reply with only the answer.",
+      "expected_answer": "34",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "hhabif"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00026",
+      "task_category": "coding",
+      "template_id": "coding_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the output of 'gjbjef'[::-1] in Python? Reply with only the answer.",
+      "expected_answer": "fejbjg",
+      "token_count": 23,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "gjbjef"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00027",
+      "task_category": "coding",
+      "template_id": "coding_family_3",
+      "template_family_index": 3,
+      "prompt": "What does sorted([21, -11, 0, 4, 26]) return in Python? Reply with only the answer.",
+      "expected_answer": "[-11, 0, 4, 21, 26]",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "kjcaag"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00028",
+      "task_category": "coding",
+      "template_id": "coding_family_4",
+      "template_family_index": 4,
+      "prompt": "What is len('ihfhig') in Python? Reply with only the answer.",
+      "expected_answer": "6",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "ihfhig"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00029",
+      "task_category": "coding",
+      "template_id": "coding_family_5",
+      "template_family_index": 5,
+      "prompt": "What is the output of [x * 2 for x in [16, 45, -20, -18, 35]]? Reply with only the answer.",
+      "expected_answer": "[32, 90, -40, -36, 70]",
+      "token_count": 40,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "dfeekb"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00030",
+      "task_category": "coding",
+      "template_id": "coding_family_6",
+      "template_family_index": 6,
+      "prompt": "What does min([-10, 5, 47, -2, -8]) return in Python? Reply with only the answer.",
+      "expected_answer": "-10",
+      "token_count": 30,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "hckjkk"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00031",
+      "task_category": "coding",
+      "template_id": "coding_family_7",
+      "template_family_index": 7,
+      "prompt": "What does list(reversed([41, 25, 6, 8, 16])) return in Python? Reply with only the answer.",
+      "expected_answer": "[16, 8, 6, 25, 41]",
+      "token_count": 33,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "aihifi"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00032",
+      "task_category": "coding",
+      "template_id": "coding_family_0",
+      "template_family_index": 0,
+      "prompt": "In Python, what is sum([40, 40, 35, 15, -14])? Reply with only the answer.",
+      "expected_answer": "116",
+      "token_count": 33,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "aceifa"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00033",
+      "task_category": "coding",
+      "template_id": "coding_family_1",
+      "template_family_index": 1,
+      "prompt": "What does Python max([42, 24, 7, 23, 2]) return? Reply with only the answer.",
+      "expected_answer": "42",
+      "token_count": 30,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "dgggee"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00034",
+      "task_category": "coding",
+      "template_id": "coding_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the output of 'ibdbdh'[::-1] in Python? Reply with only the answer.",
+      "expected_answer": "hdbdbi",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "ibdbdh"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00035",
+      "task_category": "coding",
+      "template_id": "coding_family_3",
+      "template_family_index": 3,
+      "prompt": "What does sorted([-14, 13, 32, 20, 41]) return in Python? Reply with only the answer.",
+      "expected_answer": "[-14, 13, 20, 32, 41]",
+      "token_count": 33,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "ddfckc"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00036",
+      "task_category": "coding",
+      "template_id": "coding_family_4",
+      "template_family_index": 4,
+      "prompt": "What is len('chhfjb') in Python? Reply with only the answer.",
+      "expected_answer": "6",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "chhfjb"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00037",
+      "task_category": "coding",
+      "template_id": "coding_family_5",
+      "template_family_index": 5,
+      "prompt": "What is the output of [x * 2 for x in [41, 34, 43, -13, 48]]? Reply with only the answer.",
+      "expected_answer": "[82, 68, 86, -26, 96]",
+      "token_count": 40,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "gkdkga"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00038",
+      "task_category": "coding",
+      "template_id": "coding_family_6",
+      "template_family_index": 6,
+      "prompt": "What does min([-14, 37, 39, 32, 23]) return in Python? Reply with only the answer.",
+      "expected_answer": "-14",
+      "token_count": 33,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "effbac"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00039",
+      "task_category": "coding",
+      "template_id": "coding_family_7",
+      "template_family_index": 7,
+      "prompt": "What does list(reversed([31, 31, 0, 39, 5])) return in Python? Reply with only the answer.",
+      "expected_answer": "[5, 39, 0, 31, 31]",
+      "token_count": 33,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "jebiai"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00040",
+      "task_category": "coding",
+      "template_id": "coding_family_0",
+      "template_family_index": 0,
+      "prompt": "In Python, what is sum([42, 30, -13, 6, -2])? Reply with only the answer.",
+      "expected_answer": "63",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "bjgbhe"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00041",
+      "task_category": "coding",
+      "template_id": "coding_family_1",
+      "template_family_index": 1,
+      "prompt": "What does Python max([39, 20, 41, 32, 3]) return? Reply with only the answer.",
+      "expected_answer": "41",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "ffhcdc"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00042",
+      "task_category": "coding",
+      "template_id": "coding_family_2",
+      "template_family_index": 2,
+      "prompt": "What is the output of 'efefje'[::-1] in Python? Reply with only the answer.",
+      "expected_answer": "ejfefe",
+      "token_count": 22,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "efefje"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00043",
+      "task_category": "coding",
+      "template_id": "coding_family_3",
+      "template_family_index": 3,
+      "prompt": "What does sorted([13, 38, 46, -10, -9]) return in Python? Reply with only the answer.",
+      "expected_answer": "[-10, -9, 13, 38, 46]",
+      "token_count": 32,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "egkcbc"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00044",
+      "task_category": "coding",
+      "template_id": "coding_family_4",
+      "template_family_index": 4,
+      "prompt": "What is len('keffhc') in Python? Reply with only the answer.",
+      "expected_answer": "6",
+      "token_count": 17,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "keffhc"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00045",
+      "task_category": "coding",
+      "template_id": "coding_family_5",
+      "template_family_index": 5,
+      "prompt": "What is the output of [x * 2 for x in [12, 38, -10, 38, 44]]? Reply with only the answer.",
+      "expected_answer": "[24, 76, -20, 76, 88]",
+      "token_count": 40,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "hdgakd"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00046",
+      "task_category": "coding",
+      "template_id": "coding_family_6",
+      "template_family_index": 6,
+      "prompt": "What does min([35, 37, -6, -6, 44]) return in Python? Reply with only the answer.",
+      "expected_answer": "-6",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "fedhia"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00047",
+      "task_category": "coding",
+      "template_id": "coding_family_7",
+      "template_family_index": 7,
+      "prompt": "What does list(reversed([12, 35, -11, 10, -10])) return in Python? Reply with only the answer.",
+      "expected_answer": "[-10, 10, -11, 35, 12]",
+      "token_count": 35,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "evaluation",
+      "generation_seed": 42,
+      "entities": [
+        "igfebk"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00048",
+      "task_category": "coding",
+      "template_id": "coding_family_0",
+      "template_family_index": 0,
+      "prompt": "In Python, what is sum([26, 26, 21, -15, 13])? Reply with only the answer.",
+      "expected_answer": "71",
+      "token_count": 33,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "gkfdgb"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    },
+    {
+      "prompt_id": "coding_00049",
+      "task_category": "coding",
+      "template_id": "coding_family_1",
+      "template_family_index": 1,
+      "prompt": "What does Python max([11, 0, 42, 32, 32]) return? Reply with only the answer.",
+      "expected_answer": "42",
+      "token_count": 31,
+      "token_count_method": "Qwen2TokenizerFast:Qwen/Qwen2.5-1.5B",
+      "split": "exploratory",
+      "generation_seed": 42,
+      "entities": [
+        "dkefih"
+      ],
+      "answer_format": "short_answer",
+      "answer_verification": "computed_python_semantics"
+    }
+  ],
+  "layers": [
+    {
+      "layer": 0,
+      "kind": "embedding",
+      "label": "Embedding output",
+      "post_final_norm": false
+    },
+    {
+      "layer": 1,
+      "kind": "transformer_block",
+      "label": "Block 1",
+      "post_final_norm": false
+    },
+    {
+      "layer": 2,
+      "kind": "transformer_block",
+      "label": "Block 2",
+      "post_final_norm": false
+    },
+    {
+      "layer": 3,
+      "kind": "transformer_block",
+      "label": "Block 3",
+      "post_final_norm": false
+    },
+    {
+      "layer": 4,
+      "kind": "transformer_block",
+      "label": "Block 4",
+      "post_final_norm": false
+    },
+    {
+      "layer": 5,
+      "kind": "transformer_block",
+      "label": "Block 5",
+      "post_final_norm": false
+    },
+    {
+      "layer": 6,
+      "kind": "transformer_block",
+      "label": "Block 6",
+      "post_final_norm": false
+    },
+    {
+      "layer": 7,
+      "kind": "transformer_block",
+      "label": "Block 7",
+      "post_final_norm": false
+    },
+    {
+      "layer": 8,
+      "kind": "transformer_block",
+      "label": "Block 8",
+      "post_final_norm": false
+    },
+    {
+      "layer": 9,
+      "kind": "transformer_block",
+      "label": "Block 9",
+      "post_final_norm": false
+    },
+    {
+      "layer": 10,
+      "kind": "transformer_block",
+      "label": "Block 10",
+      "post_final_norm": false
+    },
+    {
+      "layer": 11,
+      "kind": "transformer_block",
+      "label": "Block 11",
+      "post_final_norm": false
+    },
+    {
+      "layer": 12,
+      "kind": "transformer_block",
+      "label": "Block 12",
+      "post_final_norm": false
+    },
+    {
+      "layer": 13,
+      "kind": "transformer_block",
+      "label": "Block 13",
+      "post_final_norm": false
+    },
+    {
+      "layer": 14,
+      "kind": "transformer_block",
+      "label": "Block 14",
+      "post_final_norm": false
+    },
+    {
+      "layer": 15,
+      "kind": "transformer_block",
+      "label": "Block 15",
+      "post_final_norm": false
+    },
+    {
+      "layer": 16,
+      "kind": "transformer_block",
+      "label": "Block 16",
+      "post_final_norm": false
+    },
+    {
+      "layer": 17,
+      "kind": "transformer_block",
+      "label": "Block 17",
+      "post_final_norm": false
+    },
+    {
+      "layer": 18,
+      "kind": "transformer_block",
+      "label": "Block 18",
+      "post_final_norm": false
+    },
+    {
+      "layer": 19,
+      "kind": "transformer_block",
+      "label": "Block 19",
+      "post_final_norm": false
+    },
+    {
+      "layer": 20,
+      "kind": "transformer_block",
+      "label": "Block 20",
+      "post_final_norm": false
+    },
+    {
+      "layer": 21,
+      "kind": "transformer_block",
+      "label": "Block 21",
+      "post_final_norm": false
+    },
+    {
+      "layer": 22,
+      "kind": "transformer_block",
+      "label": "Block 22",
+      "post_final_norm": false
+    },
+    {
+      "layer": 23,
+      "kind": "transformer_block",
+      "label": "Block 23",
+      "post_final_norm": false
+    },
+    {
+      "layer": 24,
+      "kind": "transformer_block",
+      "label": "Block 24",
+      "post_final_norm": false
+    },
+    {
+      "layer": 25,
+      "kind": "transformer_block",
+      "label": "Block 25",
+      "post_final_norm": false
+    },
+    {
+      "layer": 26,
+      "kind": "transformer_block",
+      "label": "Block 26",
+      "post_final_norm": false
+    },
+    {
+      "layer": 27,
+      "kind": "transformer_block",
+      "label": "Block 27",
+      "post_final_norm": false
+    },
+    {
+      "layer": 28,
+      "kind": "transformer_block",
+      "label": "Block 28 + final RMSNorm",
+      "post_final_norm": true
+    }
+  ],
+  "shape": [
+    200,
+    1536
+  ],
+  "storage_dtype": "float32",
+  "completed_rows": 200,
+  "complete": true,
+  "estimated_storage_bytes": 35635200,
+  "source_fingerprint": "ddba2ff593810869a17ee0fea9b7006aefdf026f147d36fcf2cc662a505d79ed",
+  "dataset_fingerprint": "8a5e5ac40d70938cd4b168e601cb4dfce69c18cea7cfbef767c274dbbef59347",
+  "convention": "Final non-padding input token; prompt only, no generation; standard HF hidden_states tuple, final output after RMSNorm."
+}

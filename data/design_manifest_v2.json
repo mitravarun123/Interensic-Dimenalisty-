@@ -1,0 +1,113 @@
+{
+  "design_version": "2.0",
+  "dataset_fingerprint": "95846d1c8e4796d5ce07db828f26cd55e2a9d8ab5af99ab28dc25c52635f08b2",
+  "source_fingerprint": "4e81f5f00fa5e7027d6389e464b5f4227cea69955ef0818c393b655bd5efd09e",
+  "config": {
+    "model_id": "Qwen/Qwen2.5-1.5B",
+    "revision": "8faed761d45a263340a0528343f099c05c9a4323",
+    "device": "auto",
+    "dtype": "float32",
+    "batch_size": 1,
+    "dataset_path": "data/prompts_v2.jsonl",
+    "output_dir": "artifacts/qwen_v2_fp32",
+    "cache_dir": null,
+    "seed": 42,
+    "layers": null,
+    "target_count": 640,
+    "max_tokens": 512,
+    "split": "evaluation",
+    "preprocessing": [
+      "raw",
+      "unit",
+      "standardized"
+    ],
+    "repeats": 5,
+    "sample_sizes": [
+      32,
+      48,
+      64,
+      80
+    ],
+    "bootstrap": 500,
+    "permutations": 0,
+    "confidence": 0.95,
+    "min_families": 8,
+    "length_bin_width": 4,
+    "synthetic_count": 160,
+    "synthetic_width": 24,
+    "synthetic_layers": 3,
+    "permutation_exchangeable": false,
+    "figure_dpi": 600,
+    "dataset_design": "v2",
+    "require_preflight": true,
+    "min_evaluation_samples": 64,
+    "min_matched_samples": 32,
+    "uncertainty_modes": [
+      "raw"
+    ]
+  },
+  "preflight": {
+    "status": "passed",
+    "errors": [],
+    "design_versions": [
+      "2.0"
+    ],
+    "counts": {
+      "facts": {
+        "evaluation_samples": 80,
+        "evaluation_families": 10,
+        "length_matched_samples": 52,
+        "length_matched_families": 10
+      },
+      "arithmetic": {
+        "evaluation_samples": 80,
+        "evaluation_families": 10,
+        "length_matched_samples": 52,
+        "length_matched_families": 8
+      },
+      "reasoning": {
+        "evaluation_samples": 80,
+        "evaluation_families": 10,
+        "length_matched_samples": 52,
+        "length_matched_families": 8
+      },
+      "coding": {
+        "evaluation_samples": 80,
+        "evaluation_families": 10,
+        "length_matched_samples": 52,
+        "length_matched_families": 7
+      }
+    },
+    "length_matching": {
+      "status": "ok",
+      "bin_width": 4,
+      "shared_bins": [
+        10,
+        11
+      ],
+      "matched_count": 52,
+      "warning": "Bin matching leaves within-bin residual length differences."
+    },
+    "dataset_fingerprint": "95846d1c8e4796d5ce07db828f26cd55e2a9d8ab5af99ab28dc25c52635f08b2",
+    "warnings": [
+      "Matching is within tokenizer bins, not exact continuous equality.",
+      "Matched category family coverage differs; primary CI uses reasoning/facts only.",
+      "Independent family sampling and absence of crossed entity dependence remain assumptions.",
+      "Human ground-truth/ambiguity review is still required; passing preflight does not establish scientific validity."
+    ],
+    "tokenizer_validation": {
+      "model_id": "Qwen/Qwen2.5-1.5B",
+      "revision": "8faed761d45a263340a0528343f099c05c9a4323",
+      "trust_remote_code": false,
+      "model_weights_downloaded": false,
+      "final_token_counts": {
+        "13": 640
+      }
+    }
+  },
+  "status": "frozen_before_new_model_extraction",
+  "review_status": "human_ambiguity_review_pending",
+  "pilot_relationship": "designed_after_legacy_pilot; preserve pilot separately",
+  "formal_testing": "no_unjustified_task_label_permutation",
+  "dataset_input_fingerprint": "01aa195930cb7ebbf30fa54be2f06b80638df7a16716fc51c3081acb828492fa"
+}

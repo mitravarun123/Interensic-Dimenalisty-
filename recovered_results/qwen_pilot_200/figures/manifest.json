@@ -1,0 +1,20 @@
+{
+  "figures": [
+    "01_dimensionality_by_task",
+    "02_layerwise_evolution",
+    "03_pca_spectrum",
+    "04_pca_projection",
+    "05_robustness",
+    "06_length_template_controls",
+    "07_two_nn_diagnostics"
+  ],
+  "source": "model",
+  "selected_layer": 28,
+  "selected_layer_label": "Block 28 + final RMSNorm",
+  "png_dpi": 600,
+  "vector_formats": [
+    "pdf",
+    "svg"
+  ],
+  "uncertainty": "Cluster-bootstrap intervals only in comparison/control figure; subsampling ranges are descriptive."
+}
